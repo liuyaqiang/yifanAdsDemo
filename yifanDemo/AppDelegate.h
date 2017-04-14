@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#define AppKey @"a6ivlpey0w8znoplqsub6stw"
-//#define AppKey @"a6ivlpeyyxvcjamkkdtbwf0z"
+//#define AppKey @"a6ivlpey0w8znoplqsub6stw"
+#define AppKey @"a6ivlpeyyxvcjamkkdtbwf0z"
+//#define AppKey @"a6ivlpeytjduawrkyya4vxh9"
 #define PAGE @"main"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

@@ -177,6 +177,8 @@
 //        [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width*2.0 - 769)/2.0,([UIScreen mainScreen].bounds.size.height*2.0 -  522)/2,769,522)];
         [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(0,0,500,500)];
 
+        }else{
+            [self.view showHUDWithTitle:@"no native"];
         }
         
     }else if ([text isEqualToString:video]){
@@ -184,6 +186,8 @@
             [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completrion) {
                 
             }];
+        }else{
+            [self.view showHUDWithTitle:@"no video"];
         }
     }else if ([text isEqualToString:icon]){
         if ([PluginHelperOC hasIconWithPage:PAGE withEntry:@""]) {
@@ -194,17 +198,17 @@
     }else if ([text isEqualToString:more]){
         if ([PluginHelperOC hasMoreWithPage:PAGE withEntry:@""]) {
             [PluginHelperOC showMoreWithPage:PAGE withEntry:@""];
+        }else{
+            [self.view showHUDWithTitle:@"on more"];
         }
     }else if ([text isEqualToString:offer]){
         if ([PluginHelperOC hasOfferWithPage:PAGE withEntry:@"" withTaskType:0]) {
             [PluginHelperOC showOfferWithPage:PAGE withEntry:@"" withTaskType:0 withTemplateType:0 completionHandler:^(NSString * str) {
                 NSLog(@"offer completion......%@",str);
             }];
+        }else{
+            [self.view showHUDWithTitle:@"no offer"];
         }
-    }else if([text isEqualToString:videoTask]){
-        [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completion) {
-            
-        }];
     }else if ([text isEqualToString:gift]){
         
     }else if ([text isEqualToString:followTask]){
@@ -214,6 +218,17 @@
 
     }else if ([text isEqualToString:clearInstallAppInfo]){
         [PluginHelperOC clearInstallAppInfo];
+    }else if ([text isEqualToString:videoTask]){
+        NSString *vt = [PluginHelperOC hasVideoOrTaskWithPage:PAGE];
+        if ([vt isEqualToString:@"video"]) {
+            [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completrion) {
+            }];
+        } else if ([vt isEqualToString:@"task"]){
+            [PluginHelperOC showTaskWithPage:PAGE];
+        }
+        else {
+            [self.view showHUDWithTitle:@"no video no task"];
+        }
     }
 }
 #pragma mark - response Event
