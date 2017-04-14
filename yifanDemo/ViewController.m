@@ -202,9 +202,25 @@
             }];
         }
     }else if([text isEqualToString:videoTask]){
-        [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completion) {
-            
-        }];
+        void (^completionBlock)(BOOL) = ^(BOOL isComplete) {
+            if (isComplete) {
+                NSLog(@"video complete");
+            }
+        };
+        NSString *has = [PluginHelperOC hasVideoOrTaskWithPage:PAGE];
+        if ([has isEqualToString:@"video"]) {
+            [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:completionBlock];
+        } else if ([has isEqualToString:@"task"]) {
+            [PluginHelperOC showTaskWithPage:PAGE];
+        } else {
+            NSString *msg = @"无视频或task";
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                            message:msg
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
     }else if ([text isEqualToString:gift]){
         
     }else if ([text isEqualToString:followTask]){
