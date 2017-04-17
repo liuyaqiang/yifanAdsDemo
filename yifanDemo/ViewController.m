@@ -209,26 +209,6 @@
         }else{
             [self.view showHUDWithTitle:@"no offer"];
         }
-    }else if([text isEqualToString:videoTask]){
-        void (^completionBlock)(BOOL) = ^(BOOL isComplete) {
-            if (isComplete) {
-                NSLog(@"video complete");
-            }
-        };
-        NSString *has = [PluginHelperOC hasVideoOrTaskWithPage:PAGE];
-        if ([has isEqualToString:@"video"]) {
-            [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:completionBlock];
-        } else if ([has isEqualToString:@"task"]) {
-            [PluginHelperOC showTaskWithPage:PAGE];
-        } else {
-            NSString *msg = @"无视频或task";
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
-                                                            message:msg
-                                                           delegate:self
-                                                  cancelButtonTitle:nil
-                                                  otherButtonTitles:@"OK", nil];
-            [alert show];
-        }
     }else if ([text isEqualToString:gift]){
         
     }else if ([text isEqualToString:followTask]){
@@ -239,12 +219,12 @@
     }else if ([text isEqualToString:clearInstallAppInfo]){
         [PluginHelperOC clearInstallAppInfo];
     }else if ([text isEqualToString:videoTask]){
-        NSString *vt = [PluginHelperOC hasVideoOrTaskWithPage:PAGE];
+        NSString *vt = [PluginHelperOC hasVideoOrTask:PAGE];
         if ([vt isEqualToString:@"video"]) {
             [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completrion) {
             }];
         } else if ([vt isEqualToString:@"task"]){
-            [PluginHelperOC showTaskWithPage:PAGE];
+            [PluginHelperOC showTask:PAGE];
         }
         else {
             [self.view showHUDWithTitle:@"no video no task"];
