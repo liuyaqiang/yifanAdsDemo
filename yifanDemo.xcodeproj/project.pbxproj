@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		311609571EA0D75400FCF95E /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DF33AA1EA0D5FF000E6BD7 /* PluginSDK.framework */; };
+		31C4E7421EA60E7F0025B54E /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C4E7411EA60E7F0025B54E /* UMMobClick.framework */; };
 		B93A4BA11E9780930017E2BA /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B93A4BA01E9780930017E2BA /* libAppLovinSdk.a */; };
 		B93A4BA51E9780AA0017E2BA /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93A4BA41E9780AA0017E2BA /* AdjustSdk.framework */; };
 		B93A4BA91E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93A4BA81E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m */; };
@@ -98,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31C4E7411EA60E7F0025B54E /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		31DF33A31EA0D5FF000E6BD7 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		B93A4B861E9780930017E2BA /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
 		B93A4B871E9780930017E2BA /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				B93A4BA11E9780930017E2BA /* libAppLovinSdk.a in Frameworks */,
 				B93C3D701E84B4FF00C1D0A5 /* libAppnextLib.a in Frameworks */,
 				B93C3D641E84B3B000C1D0A5 /* Security.framework in Frameworks */,
+				31C4E7421EA60E7F0025B54E /* UMMobClick.framework in Frameworks */,
 				B93C3D621E84B3A700C1D0A5 /* QuartzCore.framework in Frameworks */,
 				B980E12D1E5D880F00899615 /* libsqlite3.0.tbd in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
@@ -414,6 +417,7 @@
 				B980E12C1E5D880F00899615 /* libsqlite3.0.tbd */,
 				B980E12A1E5D880300899615 /* libc++.tbd */,
 				B980E1281E5D87FA00899615 /* libc++abi.tbd */,
+				31C4E7411EA60E7F0025B54E /* UMMobClick.framework */,
 				B980E1261E5D87EC00899615 /* AdSupport.framework */,
 				B980E1241E5D87D900899615 /* Foundation.framework */,
 				B980E1221E5D87CC00899615 /* UIKit.framework */,
