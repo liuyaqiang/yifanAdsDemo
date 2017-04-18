@@ -19,12 +19,56 @@
     // Override point for customization after application launch.
     NSString *pubId = @"a7fpmwda";
     [PluginHelperOC setupViewDebug:YES];
+    [PluginHelperOC setupLogDebug:YES];
+    [self configPlugin];
+    
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
 //    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
     }];
     return YES;
+}
+- (void)configPlugin
+{
+    NSString *pubId = @"a7fpmwda";
+    //    NSString *pubId = @"";
+    //    [PluginHelperOC initPluginWithAppKey:AppKey withPubId:pubId isPortrait:YES completionHandler:^(BOOL completion) {
+    //
+    //    }];
+    
+    NSArray *admobTestIds = [NSArray arrayWithObjects:
+                             @"a34b9c2d9dad3de759060a33811e178c",//jia yan ni
+                             @"ea6ced524c5db61789e13c25b2f1a817",//iphone4
+                             @"970723dd0a9f3ab1be00ad9a907e5fdc",//zhangjun ipod touch
+                             @"533cf28ac06869d3f24affa866cbef36",//zexian ipad
+                             @"e2256b177570d5a37d80242ad31e9507",//hing
+                             @"4da63b340e0836abddca8ec92e8f98a8",//yeahf
+                             @"5e9e0aca336b2ecb77fa11768ca49546",//xiaowen ipod touch
+                             @"22da11a7a0e0b119469db9052fa6a832",//ipod touch 02
+                             @"7d5c08662747fb3cd81662bc71552f8b"//liuyaqiang
+                             , nil];
+    NSArray *facebookTestIds = [NSArray arrayWithObjects:
+                                @"602c3b96c6b03ced3ba4b8fc0a5d76905fc6e029",//jia yan ni
+                                @"0f8e7edeac9f030c11d12a2a0f36b7c63172bfc3",//iphone4
+                                @"d4510c33f858bee1f70fb59bb8797bfecd74287a",//zhangjun ipod touch
+                                @"7e2c9f0c2a94768ee925fd67e82deb829e9dee05",//zexian ipad
+                                @"675496282b0cb1d229fbe78b89d0c12f991a4d1d",//hing
+                                @"5c9b918525e5e336c2f011d1d0d64a480604eb41",//yeahf
+                                @"2be66ebfa88c787a2c9ae66102525914f4897b5d",//xiaowen ipod touch
+                                @"e2137a0ba3004ddf5f7dcc70e96311ed75cc066e",//ipod touch 02
+                                @"abe220b17203ee2db464efcf6775138a06b9a476"//liuyaqiang
+                                , nil];
+    
+    //    [PluginHelperOC setFacebookTestId:@[@"abe220b17203ee2db464efcf6775138a06b9a476"]];
+    [PluginHelperOC setAdmobTestId:admobTestIds];
+    [PluginHelperOC setFacebookTestId:facebookTestIds];
+    [PluginHelperOC setScaleEnable:YES];
+    [PluginHelperOC setIconScaleEnable:YES];
+    [PluginHelperOC enableNativeColor:YES];
+    [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
+    [PluginHelperOC setAutoRotate:YES];
+    [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:@"vungleMode"]];
 }
 
 
