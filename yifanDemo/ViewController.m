@@ -13,14 +13,15 @@
 #import <InMobiSDK/InMobiSDK.h>
 #import "YFInterstitialDisplayViewController.h"
 #import "AppDelegate.h"
+#import "YFSettingViewController.h"
+
 #define PAGE @"main"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource,IMInterstitialDelegate>
 {
-    NSString *banner, *interstitial, *adsInterstital,*selfInterstial, *native, *video, *icon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
+    NSString *setting,*banner, *interstitial, *adsInterstital,*selfInterstial, *native, *video, *icon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
 }
-@property (weak, nonatomic) IBOutlet UISwitch *vungleMSwitch;
-@property (weak, nonatomic) IBOutlet UILabel *vungleModeLa;
+
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
 @property (nonatomic, strong) IMInterstitial *interstitialaa;
@@ -28,12 +29,7 @@
 @end
 
 @implementation ViewController
-- (IBAction)switchVungleMode:(UISwitch *)sender {
-    [[NSUserDefaults standardUserDefaults] setBool:sender.on forKey:@"vungleMode"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    self.vungleModeLa.text = sender.isOn ? @"isVungelInterstitialMode" : @"isVungleVideoMode";
-    [self.view showHUDWithTitle:@"注意" detail:@"请重启app，从新加载数据，似vugle切换有效" duration:3];
-}
+
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
@@ -43,9 +39,7 @@
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     self.view.backgroundColor = [UIColor whiteColor];
-    //vungleSwitch
-    [self.vungleMSwitch setOn:[[NSUserDefaults standardUserDefaults]boolForKey:@"vungleMode"]];
-    self.vungleModeLa.text = self.vungleMSwitch.isOn ? @"isVungelInterstitialMode" : @"isVungleVideoMode";
+
 
     UILabel *titleLa = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 20)];
     titleLa.adjustsFontSizeToFitWidth = YES;
@@ -55,10 +49,7 @@
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(0);
-        make.top.mas_equalTo(100);
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
+        make.edges.equalTo(self.view);
     }];
     UIButton *rightBu = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 45)];
     rightBu.backgroundColor = [UIColor blueColor];
@@ -107,6 +98,10 @@
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
     cell.textLabel.text = text;
+    cell.backgroundColor = [UIColor whiteColor];
+    if ([text isEqualToString:setting]) {
+        cell.backgroundColor = [UIColor lightGrayColor];
+    }
     return cell;
 }
 
@@ -115,7 +110,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
-    if ([text isEqualToString:banner]) {
+    if ([text isEqualToString:setting]) {
+        YFSettingViewController *setCtl = [[YFSettingViewController alloc]init];
+        [self presentViewController:setCtl animated:YES completion:nil];
+    }else if ([text isEqualToString:banner]) {
 //        [AdMgr showAdWithType:@"banner" showWithPage:PAGE showWithEntry:@""];
 //        [PluginHelperOC setBannerPostion:Bottom];
 //        [PluginHelperOC showBannerWithPage:PAGE withEntry:@""];
@@ -167,9 +165,11 @@
             [self.view showHUDWithTitle:@"on more"];
         }
     }else if ([text isEqualToString:offer]){
+        __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
         if ([PluginHelperOC hasOfferWithPage:PAGE withEntry:@"" withTaskType:0]) {
             [PluginHelperOC showOfferWithPage:PAGE withEntry:@"" withTaskType:0 withTemplateType:0 completionHandler:^(NSString * str) {
                 NSLog(@"offer completion......%@",str);
+                cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",([cell.detailTextLabel.text integerValue] + [str integerValue])];
             }];
         }else{
             [self.view showHUDWithTitle:@"no offer"];
@@ -222,8 +222,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-        banner = @"banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", video = @"video", icon = @"icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
-        _dataArr = @[@[banner, interstitial, adsInterstital,selfInterstial,native, video, icon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
+      setting = @"setting" , banner = @"banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", video = @"video", icon = @"icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
+        _dataArr = @[@[setting ,banner, interstitial, adsInterstital,selfInterstial,native, video, icon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
     }
     return _dataArr;
 }

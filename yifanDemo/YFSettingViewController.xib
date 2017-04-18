@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YFSettingViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vungleMSwitch" destination="5WY-R4-W7R" id="Cdp-3Z-5Mr"/>
+                <outlet property="vungleModeLa" destination="OY0-DE-fFn" id="Vmx-mF-IOj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-R4-W7R">
+                    <rect key="frame" x="15" y="15" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchVungleMode:" destination="-1" eventType="valueChanged" id="BeT-WO-sZ3"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isVungleInterstitialMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-DE-fFn">
+                    <rect key="frame" x="92" y="20.5" width="184" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-5a-aVq">
+                    <rect key="frame" x="162" y="600" width="31" height="30"/>
+                    <state key="normal" title="关闭"/>
+                    <connections>
+                        <action selector="dismissCtl:" destination="-1" eventType="touchUpInside" id="BGc-u8-TOa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5WY-R4-W7R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="Ut3-xw-YdE"/>
+                <constraint firstItem="OY0-DE-fFn" firstAttribute="leading" secondItem="5WY-R4-W7R" secondAttribute="trailing" constant="28" id="Wxx-cV-6j3"/>
+                <constraint firstItem="OY0-DE-fFn" firstAttribute="centerY" secondItem="5WY-R4-W7R" secondAttribute="centerY" id="oEW-8Q-rg0"/>
+                <constraint firstItem="5WY-R4-W7R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="owL-9C-9eU"/>
+                <constraint firstAttribute="bottom" secondItem="JBb-5a-aVq" secondAttribute="bottom" id="uy9-Er-DnR"/>
+                <constraint firstItem="JBb-5a-aVq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ywh-fJ-QMc"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

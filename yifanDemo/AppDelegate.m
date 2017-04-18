@@ -18,8 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSString *pubId = @"a7fpmwda";
-    [PluginHelperOC setupViewDebug:YES];
-    [PluginHelperOC setupLogDebug:YES];
+
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
@@ -69,6 +68,8 @@
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     [PluginHelperOC setAutoRotate:YES];
     [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:@"vungleMode"]];
+    [PluginHelperOC setupViewDebug:YES];
+    [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:@"logDebug"]];
 }
 
 
