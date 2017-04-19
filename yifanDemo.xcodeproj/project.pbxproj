@@ -158,6 +158,7 @@
 		B92AD3B11EA6FE7B00EE553A /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
 		B92AD3B21EA6FE7B00EE553A /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
 		B92AD3B31EA6FE7B00EE553A /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		B92AD3C91EA7032400EE553A /* YFCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFCommonHeader.h; sourceTree = "<group>"; };
 		B93A4BA71E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFInterstitialDisplayViewController.h; sourceTree = "<group>"; };
 		B93A4BA81E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFInterstitialDisplayViewController.m; sourceTree = "<group>"; };
 		B93C3D611E84B3A700C1D0A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -436,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				B980E0CC1E5D668900899615 /* main.m */,
+				B92AD3C91EA7032400EE553A /* YFCommonHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

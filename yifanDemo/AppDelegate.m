@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PluginSDK/PluginHelperOC.h"
+#import "YFCommonHeader.h"
 @interface AppDelegate ()
 
 @end
@@ -29,13 +30,7 @@
     return YES;
 }
 - (void)configPlugin
-{
-    NSString *pubId = @"a7fpmwda";
-    //    NSString *pubId = @"";
-    //    [PluginHelperOC initPluginWithAppKey:AppKey withPubId:pubId isPortrait:YES completionHandler:^(BOOL completion) {
-    //
-    //    }];
-    
+{    
     NSArray *admobTestIds = [NSArray arrayWithObjects:
                              @"a34b9c2d9dad3de759060a33811e178c",//jia yan ni
                              @"ea6ced524c5db61789e13c25b2f1a817",//iphone4
@@ -59,7 +54,6 @@
                                 @"abe220b17203ee2db464efcf6775138a06b9a476"//liuyaqiang
                                 , nil];
     
-    //    [PluginHelperOC setFacebookTestId:@[@"abe220b17203ee2db464efcf6775138a06b9a476"]];
     [PluginHelperOC setAdmobTestId:admobTestIds];
     [PluginHelperOC setFacebookTestId:facebookTestIds];
     [PluginHelperOC setScaleEnable:YES];
@@ -67,8 +61,9 @@
     [PluginHelperOC enableNativeColor:YES];
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     [PluginHelperOC setAutoRotate:YES];
-    [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:@"vungleMode"]];
+    [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_VUNGLE_MODE]];
     [PluginHelperOC setupViewDebug:YES];
+    [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_LOG]];
     [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:@"logDebug"]];
 }
 
