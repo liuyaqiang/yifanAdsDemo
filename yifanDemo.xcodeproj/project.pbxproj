@@ -9,15 +9,7 @@
 /* Begin PBXBuildFile section */
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
-		B92AD40A1EA70F4900EE553A /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3D61EA70F4900EE553A /* AdjustSdk.framework */; };
-		B92AD40B1EA70F4900EE553A /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F31EA70F4900EE553A /* libAppLovinSdk.a */; };
-		B92AD40C1EA70F4900EE553A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F41EA70F4900EE553A /* Bolts.framework */; };
-		B92AD40D1EA70F4900EE553A /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F51EA70F4900EE553A /* FBAudienceNetwork.framework */; };
-		B92AD40E1EA70F4900EE553A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F61EA70F4900EE553A /* FBSDKCoreKit.framework */; };
-		B92AD40F1EA70F4900EE553A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F71EA70F4900EE553A /* GoogleMobileAds.framework */; };
 		B92AD4101EA70F4900EE553A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F81EA70F4900EE553A /* InMobiSDK.framework */; };
-		B92AD4111EA70F4900EE553A /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F91EA70F4900EE553A /* libAppnextLib.a */; };
-		B92AD4121EA70F4900EE553A /* libAppnextNativeAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3FA1EA70F4900EE553A /* libAppnextNativeAdsSDK.a */; };
 		B92AD4131EA70F4900EE553A /* libAppnextSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3FB1EA70F4900EE553A /* libAppnextSDKCore.a */; };
 		B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */; };
 		B92AD4151EA70F4900EE553A /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3FD1EA70F4900EE553A /* UMMobClick.framework */; };
@@ -74,6 +66,14 @@
 		B980E3771E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E3691E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36B1E5EB66B00899615 /* View+MASAdditions.m */; };
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
+		D5DC00AC1EA7745700172701 /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC008A1EA7745700172701 /* AdjustSdk.framework */; };
+		D5DC00AD1EA7745700172701 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A71EA7745700172701 /* libAppLovinSdk.a */; };
+		D5DC00AE1EA7745700172701 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A81EA7745700172701 /* Bolts.framework */; };
+		D5DC00AF1EA7745700172701 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A91EA7745700172701 /* FBAudienceNetwork.framework */; };
+		D5DC00B01EA7745700172701 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00AA1EA7745700172701 /* FBSDKCoreKit.framework */; };
+		D5DC00B11EA7745700172701 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00AB1EA7745700172701 /* GoogleMobileAds.framework */; };
+		D5DC00B41EA7746900172701 /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00B21EA7746900172701 /* libAppnextLib.a */; };
+		D5DC00B51EA7746900172701 /* libAppnextNativeAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,41 +113,7 @@
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
 		B92AD3C91EA7032400EE553A /* YFCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFCommonHeader.h; sourceTree = "<group>"; };
-		B92AD3D61EA70F4900EE553A /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
-		B92AD3D91EA70F4900EE553A /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
-		B92AD3DA1EA70F4900EE553A /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
-		B92AD3DB1EA70F4900EE553A /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
-		B92AD3DC1EA70F4900EE553A /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
-		B92AD3DD1EA70F4900EE553A /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
-		B92AD3DE1EA70F4900EE553A /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
-		B92AD3DF1EA70F4900EE553A /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
-		B92AD3E01EA70F4900EE553A /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
-		B92AD3E11EA70F4900EE553A /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
-		B92AD3E21EA70F4900EE553A /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
-		B92AD3E31EA70F4900EE553A /* ALAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAnnotations.h; sourceTree = "<group>"; };
-		B92AD3E41EA70F4900EE553A /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
-		B92AD3E51EA70F4900EE553A /* ALEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventService.h; sourceTree = "<group>"; };
-		B92AD3E61EA70F4900EE553A /* ALEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventTypes.h; sourceTree = "<group>"; };
-		B92AD3E71EA70F4900EE553A /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
-		B92AD3E81EA70F4900EE553A /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
-		B92AD3E91EA70F4900EE553A /* ALNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAd.h; sourceTree = "<group>"; };
-		B92AD3EA1EA70F4900EE553A /* ALNativeAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdLoadDelegate.h; sourceTree = "<group>"; };
-		B92AD3EB1EA70F4900EE553A /* ALNativeAdPrecacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdPrecacheDelegate.h; sourceTree = "<group>"; };
-		B92AD3EC1EA70F4900EE553A /* ALNativeAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdService.h; sourceTree = "<group>"; };
-		B92AD3ED1EA70F4900EE553A /* ALPostbackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackDelegate.h; sourceTree = "<group>"; };
-		B92AD3EE1EA70F4900EE553A /* ALPostbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackService.h; sourceTree = "<group>"; };
-		B92AD3EF1EA70F4900EE553A /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
-		B92AD3F01EA70F4900EE553A /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
-		B92AD3F11EA70F4900EE553A /* ALSwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSwiftHeaders.h; sourceTree = "<group>"; };
-		B92AD3F21EA70F4900EE553A /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
-		B92AD3F31EA70F4900EE553A /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
-		B92AD3F41EA70F4900EE553A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		B92AD3F51EA70F4900EE553A /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		B92AD3F61EA70F4900EE553A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		B92AD3F71EA70F4900EE553A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		B92AD3F81EA70F4900EE553A /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
-		B92AD3F91EA70F4900EE553A /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
-		B92AD3FA1EA70F4900EE553A /* libAppnextNativeAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextNativeAdsSDK.a; sourceTree = "<group>"; };
 		B92AD3FB1EA70F4900EE553A /* libAppnextSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextSDKCore.a; sourceTree = "<group>"; };
 		B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PluginSDKResources.bundle; sourceTree = "<group>"; };
 		B92AD3FD1EA70F4900EE553A /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
@@ -232,6 +198,40 @@
 		B980E36C1E5EB66B00899615 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		B980E36D1E5EB66B00899615 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D5DC008A1EA7745700172701 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
+		D5DC008D1EA7745700172701 /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
+		D5DC008E1EA7745700172701 /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
+		D5DC008F1EA7745700172701 /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
+		D5DC00901EA7745700172701 /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
+		D5DC00911EA7745700172701 /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
+		D5DC00921EA7745700172701 /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
+		D5DC00931EA7745700172701 /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
+		D5DC00941EA7745700172701 /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
+		D5DC00951EA7745700172701 /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
+		D5DC00961EA7745700172701 /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
+		D5DC00971EA7745700172701 /* ALAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAnnotations.h; sourceTree = "<group>"; };
+		D5DC00981EA7745700172701 /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
+		D5DC00991EA7745700172701 /* ALEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventService.h; sourceTree = "<group>"; };
+		D5DC009A1EA7745700172701 /* ALEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventTypes.h; sourceTree = "<group>"; };
+		D5DC009B1EA7745700172701 /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
+		D5DC009C1EA7745700172701 /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
+		D5DC009D1EA7745700172701 /* ALNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAd.h; sourceTree = "<group>"; };
+		D5DC009E1EA7745700172701 /* ALNativeAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdLoadDelegate.h; sourceTree = "<group>"; };
+		D5DC009F1EA7745700172701 /* ALNativeAdPrecacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdPrecacheDelegate.h; sourceTree = "<group>"; };
+		D5DC00A01EA7745700172701 /* ALNativeAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdService.h; sourceTree = "<group>"; };
+		D5DC00A11EA7745700172701 /* ALPostbackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackDelegate.h; sourceTree = "<group>"; };
+		D5DC00A21EA7745700172701 /* ALPostbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackService.h; sourceTree = "<group>"; };
+		D5DC00A31EA7745700172701 /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
+		D5DC00A41EA7745700172701 /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
+		D5DC00A51EA7745700172701 /* ALSwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSwiftHeaders.h; sourceTree = "<group>"; };
+		D5DC00A61EA7745700172701 /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
+		D5DC00A71EA7745700172701 /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
+		D5DC00A81EA7745700172701 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D5DC00A91EA7745700172701 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		D5DC00AA1EA7745700172701 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		D5DC00AB1EA7745700172701 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D5DC00B21EA7746900172701 /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
+		D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextNativeAdsSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,40 +240,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93C3D6A1E84B42200C1D0A5 /* CoreTelephony.framework in Frameworks */,
-				B92AD40E1EA70F4900EE553A /* FBSDKCoreKit.framework in Frameworks */,
 				B980E1251E5D87D900899615 /* Foundation.framework in Frameworks */,
 				B980E1231E5D87CC00899615 /* UIKit.framework in Frameworks */,
+				D5DC00AE1EA7745700172701 /* Bolts.framework in Frameworks */,
+				D5DC00B41EA7746900172701 /* libAppnextLib.a in Frameworks */,
 				B980E1271E5D87EC00899615 /* AdSupport.framework in Frameworks */,
 				B980E10C1E5D863600899615 /* CoreMedia.framework in Frameworks */,
 				B92AD4101EA70F4900EE553A /* InMobiSDK.framework in Frameworks */,
+				D5DC00AF1EA7745700172701 /* FBAudienceNetwork.framework in Frameworks */,
 				B980E1181E5D86B400899615 /* CoreGraphics.framework in Frameworks */,
-				B92AD40A1EA70F4900EE553A /* AdjustSdk.framework in Frameworks */,
 				B93C3D681E84B3F600C1D0A5 /* MobileCoreServices.framework in Frameworks */,
 				B980E1161E5D868700899615 /* SystemConfiguration.framework in Frameworks */,
-				B92AD4111EA70F4900EE553A /* libAppnextLib.a in Frameworks */,
+				D5DC00AD1EA7745700172701 /* libAppLovinSdk.a in Frameworks */,
 				B980E10E1E5D864700899615 /* AVFoundation.framework in Frameworks */,
-				B92AD40F1EA70F4900EE553A /* GoogleMobileAds.framework in Frameworks */,
-				B92AD40B1EA70F4900EE553A /* libAppLovinSdk.a in Frameworks */,
 				B93C3D661E84B3B600C1D0A5 /* CFNetwork.framework in Frameworks */,
 				B92AD4151EA70F4900EE553A /* UMMobClick.framework in Frameworks */,
 				B93C3D641E84B3B000C1D0A5 /* Security.framework in Frameworks */,
 				B93C3D621E84B3A700C1D0A5 /* QuartzCore.framework in Frameworks */,
-				B92AD40C1EA70F4900EE553A /* Bolts.framework in Frameworks */,
 				B980E12D1E5D880F00899615 /* libsqlite3.0.tbd in Frameworks */,
 				B92AD41D1EA70F4900EE553A /* VungleSDK.framework in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
-				B92AD4121EA70F4900EE553A /* libAppnextNativeAdsSDK.a in Frameworks */,
 				B980E11E1E5D86D100899615 /* WebKit.framework in Frameworks */,
-				B92AD40D1EA70F4900EE553A /* FBAudienceNetwork.framework in Frameworks */,
 				B980E12B1E5D880300899615 /* libc++.tbd in Frameworks */,
 				B980E1291E5D87FA00899615 /* libc++abi.tbd in Frameworks */,
 				B980E1211E5D87C400899615 /* iAd.framework in Frameworks */,
 				B92AD4131EA70F4900EE553A /* libAppnextSDKCore.a in Frameworks */,
+				D5DC00B01EA7745700172701 /* FBSDKCoreKit.framework in Frameworks */,
+				D5DC00AC1EA7745700172701 /* AdjustSdk.framework in Frameworks */,
 				B980E11A1E5D86BC00899615 /* MessageUI.framework in Frameworks */,
 				B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */,
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
+				D5DC00B51EA7746900172701 /* libAppnextNativeAdsSDK.a in Frameworks */,
 				B980E1101E5D865600899615 /* CoreMotion.framework in Frameworks */,
 				B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */,
+				D5DC00B11EA7745700172701 /* GoogleMobileAds.framework in Frameworks */,
 				B92AD4161EA70F4900EE553A /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,15 +307,15 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				B92AD3D61EA70F4900EE553A /* AdjustSdk.framework */,
-				B92AD3D71EA70F4900EE553A /* applovin-ios-sdk-3.3.1 */,
-				B92AD3F41EA70F4900EE553A /* Bolts.framework */,
-				B92AD3F51EA70F4900EE553A /* FBAudienceNetwork.framework */,
-				B92AD3F61EA70F4900EE553A /* FBSDKCoreKit.framework */,
-				B92AD3F71EA70F4900EE553A /* GoogleMobileAds.framework */,
+				D5DC00B21EA7746900172701 /* libAppnextLib.a */,
+				D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */,
+				D5DC008A1EA7745700172701 /* AdjustSdk.framework */,
+				D5DC008B1EA7745700172701 /* applovin-ios-sdk-3.3.1 */,
+				D5DC00A81EA7745700172701 /* Bolts.framework */,
+				D5DC00A91EA7745700172701 /* FBAudienceNetwork.framework */,
+				D5DC00AA1EA7745700172701 /* FBSDKCoreKit.framework */,
+				D5DC00AB1EA7745700172701 /* GoogleMobileAds.framework */,
 				B92AD3F81EA70F4900EE553A /* InMobiSDK.framework */,
-				B92AD3F91EA70F4900EE553A /* libAppnextLib.a */,
-				B92AD3FA1EA70F4900EE553A /* libAppnextNativeAdsSDK.a */,
 				B92AD3FB1EA70F4900EE553A /* libAppnextSDKCore.a */,
 				B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */,
 				B92AD3FD1EA70F4900EE553A /* UMMobClick.framework */,
@@ -323,48 +323,6 @@
 				B92AD4011EA70F4900EE553A /* VungleSDK.embeddedframework */,
 			);
 			path = FrameWork;
-			sourceTree = "<group>";
-		};
-		B92AD3D71EA70F4900EE553A /* applovin-ios-sdk-3.3.1 */ = {
-			isa = PBXGroup;
-			children = (
-				B92AD3D81EA70F4900EE553A /* headers */,
-				B92AD3F31EA70F4900EE553A /* libAppLovinSdk.a */,
-			);
-			path = "applovin-ios-sdk-3.3.1";
-			sourceTree = "<group>";
-		};
-		B92AD3D81EA70F4900EE553A /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				B92AD3D91EA70F4900EE553A /* ALAd.h */,
-				B92AD3DA1EA70F4900EE553A /* ALAdDisplayDelegate.h */,
-				B92AD3DB1EA70F4900EE553A /* ALAdLoadDelegate.h */,
-				B92AD3DC1EA70F4900EE553A /* ALAdRewardDelegate.h */,
-				B92AD3DD1EA70F4900EE553A /* ALAdService.h */,
-				B92AD3DE1EA70F4900EE553A /* ALAdSize.h */,
-				B92AD3DF1EA70F4900EE553A /* ALAdType.h */,
-				B92AD3E01EA70F4900EE553A /* ALAdUpdateDelegate.h */,
-				B92AD3E11EA70F4900EE553A /* ALAdVideoPlaybackDelegate.h */,
-				B92AD3E21EA70F4900EE553A /* ALAdView.h */,
-				B92AD3E31EA70F4900EE553A /* ALAnnotations.h */,
-				B92AD3E41EA70F4900EE553A /* ALErrorCodes.h */,
-				B92AD3E51EA70F4900EE553A /* ALEventService.h */,
-				B92AD3E61EA70F4900EE553A /* ALEventTypes.h */,
-				B92AD3E71EA70F4900EE553A /* ALIncentivizedInterstitialAd.h */,
-				B92AD3E81EA70F4900EE553A /* ALInterstitialAd.h */,
-				B92AD3E91EA70F4900EE553A /* ALNativeAd.h */,
-				B92AD3EA1EA70F4900EE553A /* ALNativeAdLoadDelegate.h */,
-				B92AD3EB1EA70F4900EE553A /* ALNativeAdPrecacheDelegate.h */,
-				B92AD3EC1EA70F4900EE553A /* ALNativeAdService.h */,
-				B92AD3ED1EA70F4900EE553A /* ALPostbackDelegate.h */,
-				B92AD3EE1EA70F4900EE553A /* ALPostbackService.h */,
-				B92AD3EF1EA70F4900EE553A /* ALSdk.h */,
-				B92AD3F01EA70F4900EE553A /* ALSdkSettings.h */,
-				B92AD3F11EA70F4900EE553A /* ALSwiftHeaders.h */,
-				B92AD3F21EA70F4900EE553A /* ALTargetingData.h */,
-			);
-			path = headers;
 			sourceTree = "<group>";
 		};
 		B92AD3FE1EA70F4900EE553A /* UnityAds.embeddedframework */ = {
@@ -560,6 +518,48 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5DC008B1EA7745700172701 /* applovin-ios-sdk-3.3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC008C1EA7745700172701 /* headers */,
+				D5DC00A71EA7745700172701 /* libAppLovinSdk.a */,
+			);
+			path = "applovin-ios-sdk-3.3.1";
+			sourceTree = "<group>";
+		};
+		D5DC008C1EA7745700172701 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC008D1EA7745700172701 /* ALAd.h */,
+				D5DC008E1EA7745700172701 /* ALAdDisplayDelegate.h */,
+				D5DC008F1EA7745700172701 /* ALAdLoadDelegate.h */,
+				D5DC00901EA7745700172701 /* ALAdRewardDelegate.h */,
+				D5DC00911EA7745700172701 /* ALAdService.h */,
+				D5DC00921EA7745700172701 /* ALAdSize.h */,
+				D5DC00931EA7745700172701 /* ALAdType.h */,
+				D5DC00941EA7745700172701 /* ALAdUpdateDelegate.h */,
+				D5DC00951EA7745700172701 /* ALAdVideoPlaybackDelegate.h */,
+				D5DC00961EA7745700172701 /* ALAdView.h */,
+				D5DC00971EA7745700172701 /* ALAnnotations.h */,
+				D5DC00981EA7745700172701 /* ALErrorCodes.h */,
+				D5DC00991EA7745700172701 /* ALEventService.h */,
+				D5DC009A1EA7745700172701 /* ALEventTypes.h */,
+				D5DC009B1EA7745700172701 /* ALIncentivizedInterstitialAd.h */,
+				D5DC009C1EA7745700172701 /* ALInterstitialAd.h */,
+				D5DC009D1EA7745700172701 /* ALNativeAd.h */,
+				D5DC009E1EA7745700172701 /* ALNativeAdLoadDelegate.h */,
+				D5DC009F1EA7745700172701 /* ALNativeAdPrecacheDelegate.h */,
+				D5DC00A01EA7745700172701 /* ALNativeAdService.h */,
+				D5DC00A11EA7745700172701 /* ALPostbackDelegate.h */,
+				D5DC00A21EA7745700172701 /* ALPostbackService.h */,
+				D5DC00A31EA7745700172701 /* ALSdk.h */,
+				D5DC00A41EA7745700172701 /* ALSdkSettings.h */,
+				D5DC00A51EA7745700172701 /* ALSwiftHeaders.h */,
+				D5DC00A61EA7745700172701 /* ALTargetingData.h */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
