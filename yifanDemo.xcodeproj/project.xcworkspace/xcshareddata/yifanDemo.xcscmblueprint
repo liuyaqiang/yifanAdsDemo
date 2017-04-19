@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "955FBC88E35963F6448BEF9ED87E3FC23DFCBFEE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "955FBC88E35963F6448BEF9ED87E3FC23DFCBFEE" : 9223372036854775807,
+    "EDB6EB836190C924505FF35A58959E859D12B17A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2B11BBC-724A-4143-B54A-35C4ED4A4164",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "955FBC88E35963F6448BEF9ED87E3FC23DFCBFEE" : "yifanAdsDemo\/",
+    "EDB6EB836190C924505FF35A58959E859D12B17A" : "IOS-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "yifanDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "yifanDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/liuyaqiang\/yifanAdsDemo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "955FBC88E35963F6448BEF9ED87E3FC23DFCBFEE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/yeahyf\/IOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EDB6EB836190C924505FF35A58959E859D12B17A"
+    }
+  ]
+}
