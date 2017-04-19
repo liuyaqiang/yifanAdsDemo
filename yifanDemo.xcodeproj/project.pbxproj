@@ -74,23 +74,10 @@
 		D5DC00B11EA7745700172701 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00AB1EA7745700172701 /* GoogleMobileAds.framework */; };
 		D5DC00B41EA7746900172701 /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00B21EA7746900172701 /* libAppnextLib.a */; };
 		D5DC00B51EA7746900172701 /* libAppnextNativeAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */; };
+		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		317041471EA768D60083B7E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 317041411EA768D50083B7E1 /* PluginSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D5B1EEF91CE02185002528A8;
-			remoteInfo = PluginSDK;
-		};
-		317041491EA768D60083B7E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 317041411EA768D50083B7E1 /* PluginSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D5B1EF381CE024A3002528A8;
-			remoteInfo = PluginSDKResources;
-		};
 		B980E0E21E5D668900899615 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B980E0C01E5D668900899615 /* Project object */;
@@ -105,10 +92,23 @@
 			remoteGlobalIDString = B980E0C71E5D668900899615;
 			remoteInfo = yifanDemo;
 		};
+		D5DC00BE1EA77DF200172701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5B1EEF91CE02185002528A8;
+			remoteInfo = PluginSDK;
+		};
+		D5DC00C01EA77DF200172701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5B1EF381CE024A3002528A8;
+			remoteInfo = PluginSDKResources;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		317041411EA768D50083B7E1 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		B92AD3741EA6229B00EE553A /* YFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSettingViewController.h; sourceTree = "<group>"; };
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
@@ -232,6 +232,7 @@
 		D5DC00AB1EA7745700172701 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D5DC00B21EA7746900172701 /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
 		D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextNativeAdsSDK.a; sourceTree = "<group>"; };
+		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */,
 				B93C3D6A1E84B42200C1D0A5 /* CoreTelephony.framework in Frameworks */,
 				B980E1251E5D87D900899615 /* Foundation.framework in Frameworks */,
 				B980E1231E5D87CC00899615 /* UIKit.framework in Frameworks */,
@@ -295,15 +297,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		317041421EA768D50083B7E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				317041481EA768D60083B7E1 /* PluginSDK.framework */,
-				3170414A1EA768D60083B7E1 /* PluginSDKResources.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +359,7 @@
 		B980E0BF1E5D668900899615 = {
 			isa = PBXGroup;
 			children = (
-				317041411EA768D50083B7E1 /* PluginSDK.xcodeproj */,
+				D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */,
 				B980E0CA1E5D668900899615 /* yifanDemo */,
 				B980E0E41E5D668900899615 /* yifanDemoTests */,
 				B980E0EF1E5D668900899615 /* yifanDemoUITests */,
@@ -562,6 +555,15 @@
 			path = headers;
 			sourceTree = "<group>";
 		};
+		D5DC00B91EA77DF200172701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DC00BF1EA77DF200172701 /* PluginSDK.framework */,
+				D5DC00C11EA77DF200172701 /* PluginSDKResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -668,8 +670,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 317041421EA768D50083B7E1 /* Products */;
-					ProjectRef = 317041411EA768D50083B7E1 /* PluginSDK.xcodeproj */;
+					ProductGroup = D5DC00B91EA77DF200172701 /* Products */;
+					ProjectRef = D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -682,18 +684,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		317041481EA768D60083B7E1 /* PluginSDK.framework */ = {
+		D5DC00BF1EA77DF200172701 /* PluginSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PluginSDK.framework;
-			remoteRef = 317041471EA768D60083B7E1 /* PBXContainerItemProxy */;
+			remoteRef = D5DC00BE1EA77DF200172701 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3170414A1EA768D60083B7E1 /* PluginSDKResources.bundle */ = {
+		D5DC00C11EA77DF200172701 /* PluginSDKResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = PluginSDKResources.bundle;
-			remoteRef = 317041491EA768D60083B7E1 /* PBXContainerItemProxy */;
+			remoteRef = D5DC00C01EA77DF200172701 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

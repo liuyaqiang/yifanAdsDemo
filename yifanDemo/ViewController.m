@@ -185,11 +185,15 @@
         [PluginHelperOC clearInstallAppInfo];
     }else if ([text isEqualToString:videoTask]){
         NSString *vt = [PluginHelperOC hasVideoOrTask:PAGE];
-        if ([vt isEqualToString:@"video"]) {
+        if ([vt isEqualToString:@"video1"]) {
             [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completrion) {
             }];
-        } else if ([vt isEqualToString:@"task"]){
-            [PluginHelperOC showTask:PAGE];
+        } else if ([vt isEqualToString:@"task"]||[vt isEqualToString:@"video"]){
+            __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            [PluginHelperOC showTask:PAGE completionHandler:^(NSString * str) {
+                NSLog(@"offer completion......%@",str);
+                cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",([cell.detailTextLabel.text integerValue] + [str integerValue])];
+            }];
         }
         else {
             [self.view showHUDWithTitle:@"no video no task"];
