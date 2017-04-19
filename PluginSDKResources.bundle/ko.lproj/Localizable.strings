@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  PluginSDK
+
+  Created by leonard.li on 16/6/28.
+  Copyright © 2016年 yifan. All rights reserved.
+*/
+"Offer_Desc"="다운로드 및 실행";
+"Offer_Free"="무료";
+"Offer_Earn"="벌다";
+"More_Title"="클래식 무료 앱";
+"More_Download"="당장 놀다";
+"More"="더";
+"Social_Task"="몇 가지 단계를 완료";
+"Yes"="네";
+"No"="아니";
+"Install"="설치";
+"ClickToEarn"="더 많은 승리를 클릭하십시오";
+"LikeThisApp"="이 애플 리 케이이 션을 좋아 합니까?";
+"Close"="끔";
+"Start"="시작";
+"Next"="다음";
+"Task_Title"="작업 목록";
+"Start_Now"="지금 시작";
+"Play_Now"="당장 놀다";

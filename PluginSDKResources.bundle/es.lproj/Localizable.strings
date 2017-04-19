@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  PluginSDK
+
+  Created by leonard.li on 16/6/28.
+  Copyright © 2016年 yifan. All rights reserved.
+*/
+"Offer_Desc"="Descarga y ejecución.";
+"Offer_Free"="Gratis";
+"Offer_Earn"="Ganar";
+"More_Title"="Aplicaciones gratuitas clásicos";
+"More_Download"="Jugar ahora";
+"More"="Más";
+"Social_Task"="Completar estos pasos";
+"Yes"="sí";
+"No"="no";
+"Install"="Instalar";
+"ClickToEarn"="Haga clic para ganar más";
+"LikeThisApp"="Qué le gusta esta aplicación?";
+"Close"="No";
+"Start"="Inicio";
+"Next"="Siguiente";
+"Task_Title"="Lista de tareas";
+"Start_Now"="empezar ahora";
+"Play_Now"="Jugar ahora";
