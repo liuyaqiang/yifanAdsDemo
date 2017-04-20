@@ -66,6 +66,8 @@
     [PluginHelperOC setAutoRotate:YES];
     [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_VUNGLE_MODE]];
     [PluginHelperOC setupViewDebug:YES];
+    NSString *level = LEVEL;
+    [PluginHelperOC setLevel:level];
     [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_LOG]];
     [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:@"logDebug"]];
 }
