@@ -66,7 +66,6 @@
     NSString *level = LEVEL;
     [PluginHelperOC setLevel:level];
     [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_LOG]];
-    [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:@"logDebug"]];
 }
 
 
