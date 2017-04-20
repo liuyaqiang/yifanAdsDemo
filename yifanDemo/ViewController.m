@@ -175,7 +175,13 @@
             [self.view showHUDWithTitle:@"no offer"];
         }
     }else if ([text isEqualToString:gift]){
-        
+        if ([PluginHelperOC hasInterstitialGift:PAGE]) {
+            [PluginHelperOC showInterstitialGift:PAGE completionHandler:^(BOOL isClosed) {
+                
+            }];
+        }else{
+            [self.view showHUDWithTitle:@"no gift"];
+        }
     }else if ([text isEqualToString:followTask]){
         
     }else if ([text isEqualToString:clearFollow]){
