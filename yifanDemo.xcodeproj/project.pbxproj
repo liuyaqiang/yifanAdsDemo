@@ -78,6 +78,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		319735DB1EA8910700DD2D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319735D51EA8910700DD2D26 /* PluginSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5B1EEF91CE02185002528A8;
+			remoteInfo = PluginSDK;
+		};
+		319735DD1EA8910700DD2D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319735D51EA8910700DD2D26 /* PluginSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5B1EF381CE024A3002528A8;
+			remoteInfo = PluginSDKResources;
+		};
 		B980E0E21E5D668900899615 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B980E0C01E5D668900899615 /* Project object */;
@@ -109,6 +123,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		319735D51EA8910700DD2D26 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		B92AD3741EA6229B00EE553A /* YFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSettingViewController.h; sourceTree = "<group>"; };
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
@@ -297,6 +312,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319735D61EA8910700DD2D26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				319735DC1EA8910700DD2D26 /* PluginSDK.framework */,
+				319735DE1EA8910700DD2D26 /* PluginSDKResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */,
+				319735D51EA8910700DD2D26 /* PluginSDK.xcodeproj */,
 				B980E0CA1E5D668900899615 /* yifanDemo */,
 				B980E0E41E5D668900899615 /* yifanDemoTests */,
 				B980E0EF1E5D668900899615 /* yifanDemoUITests */,
@@ -673,6 +698,10 @@
 					ProductGroup = D5DC00B91EA77DF200172701 /* Products */;
 					ProjectRef = D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */;
 				},
+				{
+					ProductGroup = 319735D61EA8910700DD2D26 /* Products */;
+					ProjectRef = 319735D51EA8910700DD2D26 /* PluginSDK.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -684,6 +713,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		319735DC1EA8910700DD2D26 /* PluginSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PluginSDK.framework;
+			remoteRef = 319735DB1EA8910700DD2D26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		319735DE1EA8910700DD2D26 /* PluginSDKResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PluginSDKResources.bundle;
+			remoteRef = 319735DD1EA8910700DD2D26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D5DC00BF1EA77DF200172701 /* PluginSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
