@@ -37,15 +37,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     self.view.backgroundColor = [UIColor whiteColor];
 
 
-    UILabel *titleLa = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 20)];
-    titleLa.adjustsFontSizeToFitWidth = YES;
-    titleLa.text = [NSString stringWithFormat:@"appkey:%@",AppKey];
-    titleLa.textColor = [UIColor blueColor];
-    self.navigationItem.titleView = titleLa;
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,6 +51,16 @@
     [rightBu addTarget:self action:@selector(hidden) forControlEvents:UIControlEventTouchUpInside];
        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightBu];
     self.navigationItem.rightBarButtonItem = rightItem;
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    UILabel *titleLa = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 20)];
+    titleLa.adjustsFontSizeToFitWidth = YES;
+    titleLa.text = [NSString stringWithFormat:@"appkey:%@",AppKey];
+    titleLa.textColor = [UIColor blueColor];
+    self.navigationItem.titleView = titleLa;
+
 }
 #pragma mark -
 #pragma mark UITableViewDataSource/UITableViewDelegate
@@ -185,10 +189,10 @@
         [PluginHelperOC clearInstallAppInfo];
     }else if ([text isEqualToString:videoTask]){
         NSString *vt = [PluginHelperOC hasVideoOrTask:PAGE];
-        if ([vt isEqualToString:@"video1"]) {
+        if ([vt isEqualToString:@"video"]) {
             [PluginHelperOC showVideoWithPage:PAGE withEntry:@"" completionHandler:^(BOOL completrion) {
             }];
-        } else if ([vt isEqualToString:@"task"]||[vt isEqualToString:@"video"]){
+        } else if ([vt isEqualToString:@"task"]){
             __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
             [PluginHelperOC showTask:PAGE completionHandler:^(NSString * str) {
                 NSLog(@"offer completion......%@",str);
