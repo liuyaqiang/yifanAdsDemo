@@ -56,6 +56,9 @@
                                 @"e2137a0ba3004ddf5f7dcc70e96311ed75cc066e",//ipod touch 02
                                 @"abe220b17203ee2db464efcf6775138a06b9a476"//liuyaqiang
                                 , nil];
+    [PluginHelperOC setupViewDebug:YES];
+    NSString *level = LEVEL;
+    [PluginHelperOC setLevel:level];
     
     [PluginHelperOC setAdmobTestId:admobTestIds];
     [PluginHelperOC setFacebookTestId:facebookTestIds];
@@ -65,10 +68,7 @@
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     [PluginHelperOC setAutoRotate:YES];
     [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_VUNGLE_MODE]];
-    [PluginHelperOC setupViewDebug:YES];
-    NSString *level = LEVEL;
-    [PluginHelperOC setLevel:level];
-    [PluginHelperOC setupLogDebug:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_LOG]];
+
 }
 
 
