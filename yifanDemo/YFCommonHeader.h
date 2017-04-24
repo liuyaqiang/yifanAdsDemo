@@ -27,7 +27,7 @@
 
 
 #define NS_DEFAULT_VUNGLE_MODE  @"default_vungleMode"
-#define NS_DEFAULT_LOG  @"default_log"
+#define NS_DEFAULT_LOG  @"config_log_debug"
 #define NS_DEFAULT_APPKEY @"default_appkey"
 #define NS_DEFAULT_PAGE @"default_page"
 #define NS_DEFAULT_LEVEL @"default_level"
