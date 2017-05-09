@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31E357541EBC7A8900D8E037 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E357531EBC7A8900D8E037 /* AdColony.framework */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
 		B92AD4101EA70F4900EE553A /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92AD3F81EA70F4900EE553A /* InMobiSDK.framework */; };
@@ -125,7 +124,6 @@
 
 /* Begin PBXFileReference section */
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
-		31E357531EBC7A8900D8E037 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		B92AD3741EA6229B00EE553A /* YFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSettingViewController.h; sourceTree = "<group>"; };
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 				B92AD41D1EA70F4900EE553A /* VungleSDK.framework in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
 				B980E11E1E5D86D100899615 /* WebKit.framework in Frameworks */,
-				31E357541EBC7A8900D8E037 /* AdColony.framework in Frameworks */,
 				B980E12B1E5D880300899615 /* libc++.tbd in Frameworks */,
 				B980E1291E5D87FA00899615 /* libc++abi.tbd in Frameworks */,
 				B980E1211E5D87C400899615 /* iAd.framework in Frameworks */,
@@ -327,7 +324,6 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				31E357531EBC7A8900D8E037 /* AdColony.framework */,
 				D5DC00B21EA7746900172701 /* libAppnextLib.a */,
 				D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */,
 				D5DC008A1EA7745700172701 /* AdjustSdk.framework */,
