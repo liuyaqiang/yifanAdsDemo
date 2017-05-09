@@ -973,7 +973,10 @@
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/applovin-ios-sdk-3.3.1",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yifan.yifanDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1009,7 +1012,10 @@
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/applovin-ios-sdk-3.3.1",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yifan.yifanDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
