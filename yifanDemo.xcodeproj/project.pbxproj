@@ -66,6 +66,7 @@
 		B980E3771E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E3691E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36B1E5EB66B00899615 /* View+MASAdditions.m */; };
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
+		D5C278AD1EC19549002A845F /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C278AC1EC19549002A845F /* AdColony.framework */; };
 		D5DC00AC1EA7745700172701 /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC008A1EA7745700172701 /* AdjustSdk.framework */; };
 		D5DC00AD1EA7745700172701 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A71EA7745700172701 /* libAppLovinSdk.a */; };
 		D5DC00AE1EA7745700172701 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A81EA7745700172701 /* Bolts.framework */; };
@@ -213,6 +214,7 @@
 		B980E36C1E5EB66B00899615 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		B980E36D1E5EB66B00899615 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D5C278AC1EC19549002A845F /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		D5DC008A1EA7745700172701 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
 		D5DC008D1EA7745700172701 /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
 		D5DC008E1EA7745700172701 /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				B92AD41D1EA70F4900EE553A /* VungleSDK.framework in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
 				B980E11E1E5D86D100899615 /* WebKit.framework in Frameworks */,
+				D5C278AD1EC19549002A845F /* AdColony.framework in Frameworks */,
 				B980E12B1E5D880300899615 /* libc++.tbd in Frameworks */,
 				B980E1291E5D87FA00899615 /* libc++abi.tbd in Frameworks */,
 				B980E1211E5D87C400899615 /* iAd.framework in Frameworks */,
@@ -324,6 +327,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D5C278AC1EC19549002A845F /* AdColony.framework */,
 				D5DC00B21EA7746900172701 /* libAppnextLib.a */,
 				D5DC00B31EA7746900172701 /* libAppnextNativeAdsSDK.a */,
 				D5DC008A1EA7745700172701 /* AdjustSdk.framework */,
