@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,8 +15,6 @@
                 <outlet property="logSwitch" destination="p31-eb-aGc" id="xUS-G6-ncY"/>
                 <outlet property="pageTextField" destination="vOy-ds-Afw" id="qwd-3Z-ZFD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="vungleMSwitch" destination="5WY-R4-W7R" id="Cdp-3Z-5Mr"/>
-                <outlet property="vungleModeLa" destination="OY0-DE-fFn" id="Vmx-mF-IOj"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -35,18 +33,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pua-4s-rC1">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                     <subviews>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-R4-W7R">
-                            <rect key="frame" x="15" y="321" width="51" height="31"/>
-                            <connections>
-                                <action selector="switchVungleMode:" destination="-1" eventType="valueChanged" id="BeT-WO-sZ3"/>
-                            </connections>
-                        </switch>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isVungleInterstitialMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-DE-fFn">
-                            <rect key="frame" x="84" y="326" width="184" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p31-eb-aGc">
                             <rect key="frame" x="15" y="275" width="51" height="31"/>
                             <connections>
@@ -119,7 +105,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="OY0-DE-fFn" firstAttribute="leading" secondItem="5WY-R4-W7R" secondAttribute="trailing" constant="20" id="02m-Is-vPD"/>
                         <constraint firstItem="p31-eb-aGc" firstAttribute="top" secondItem="OgG-Ah-g5F" secondAttribute="bottom" constant="100" id="0TS-W9-sfQ"/>
                         <constraint firstItem="rU8-yn-zTl" firstAttribute="top" secondItem="Zgs-Cp-MXw" secondAttribute="bottom" constant="10" id="1KQ-Vl-hNq"/>
                         <constraint firstAttribute="trailing" secondItem="Zgs-Cp-MXw" secondAttribute="trailing" constant="15" id="2cf-LA-n9f"/>
@@ -130,7 +115,6 @@
                         <constraint firstAttribute="trailing" secondItem="LLh-cz-Mcn" secondAttribute="trailing" constant="15" id="IXC-Dn-4F0"/>
                         <constraint firstItem="p31-eb-aGc" firstAttribute="leading" secondItem="pua-4s-rC1" secondAttribute="leading" constant="15" id="Jah-Wu-rPq"/>
                         <constraint firstItem="LLh-cz-Mcn" firstAttribute="top" secondItem="pua-4s-rC1" secondAttribute="top" constant="15" id="Jce-bE-aY8"/>
-                        <constraint firstItem="5WY-R4-W7R" firstAttribute="leading" secondItem="pua-4s-rC1" secondAttribute="leading" constant="15" id="Ma6-7o-Qcg"/>
                         <constraint firstItem="LLh-cz-Mcn" firstAttribute="leading" secondItem="lLD-fM-PEC" secondAttribute="trailing" constant="10" id="O3w-bQ-3mX"/>
                         <constraint firstItem="vOy-ds-Afw" firstAttribute="leading" secondItem="5Iw-fy-gJT" secondAttribute="trailing" constant="10" id="Oee-XL-Uuy"/>
                         <constraint firstItem="lLD-fM-PEC" firstAttribute="leading" secondItem="pua-4s-rC1" secondAttribute="leading" constant="15" id="Sku-gf-eAD"/>
@@ -142,8 +126,6 @@
                         <constraint firstItem="Zgs-Cp-MXw" firstAttribute="leading" secondItem="8xS-mh-IBn" secondAttribute="trailing" constant="15" id="fJT-EB-Uf3"/>
                         <constraint firstItem="8xS-mh-IBn" firstAttribute="trailing" secondItem="5Iw-fy-gJT" secondAttribute="trailing" id="hRH-tC-sfp"/>
                         <constraint firstItem="5Iw-fy-gJT" firstAttribute="centerY" secondItem="vOy-ds-Afw" secondAttribute="centerY" id="kGx-ha-bCP"/>
-                        <constraint firstItem="5WY-R4-W7R" firstAttribute="top" secondItem="p31-eb-aGc" secondAttribute="bottom" constant="15" id="mi2-X0-xBL"/>
-                        <constraint firstItem="OY0-DE-fFn" firstAttribute="centerY" secondItem="5WY-R4-W7R" secondAttribute="centerY" id="ot0-Yc-dca"/>
                         <constraint firstItem="FOU-kB-Qs2" firstAttribute="leading" secondItem="p31-eb-aGc" secondAttribute="trailing" constant="20" id="qdR-2d-rhq"/>
                         <constraint firstItem="5Iw-fy-gJT" firstAttribute="trailing" secondItem="lLD-fM-PEC" secondAttribute="trailing" id="yUE-bI-bPC"/>
                     </constraints>
