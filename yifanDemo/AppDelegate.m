@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     NSString *pubId = @"a7fpmwda";
 
+    //[application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
