@@ -66,6 +66,7 @@
 		B980E3771E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E3691E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36B1E5EB66B00899615 /* View+MASAdditions.m */; };
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
+		B9A126681ECD3E9A00A3F776 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A126671ECD3E9A00A3F776 /* launch.png */; };
 		D5DC00AC1EA7745700172701 /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC008A1EA7745700172701 /* AdjustSdk.framework */; };
 		D5DC00AD1EA7745700172701 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A71EA7745700172701 /* libAppLovinSdk.a */; };
 		D5DC00AE1EA7745700172701 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00A81EA7745700172701 /* Bolts.framework */; };
@@ -213,6 +214,7 @@
 		B980E36C1E5EB66B00899615 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		B980E36D1E5EB66B00899615 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B9A126671ECD3E9A00A3F776 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		D5DC008A1EA7745700172701 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
 		D5DC008D1EA7745700172701 /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
 		D5DC008E1EA7745700172701 /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				B980E3541E5EB66B00899615 /* Masonry */,
 				B980E1371E5E8C2E00899615 /* category */,
 				B980E0D71E5D668900899615 /* Assets.xcassets */,
+				B9A126671ECD3E9A00A3F776 /* launch.png */,
 				B980E0D41E5D668900899615 /* Main.storyboard */,
 				B980E0D91E5D668900899615 /* LaunchScreen.storyboard */,
 				B980E0DC1E5D668900899615 /* Info.plist */,
@@ -760,6 +763,7 @@
 				B92AD41B1EA70F4900EE553A /* vg_mute_on.png in Resources */,
 				B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */,
 				B92AD41C1EA70F4900EE553A /* vg_privacy.png in Resources */,
+				B9A126681ECD3E9A00A3F776 /* launch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

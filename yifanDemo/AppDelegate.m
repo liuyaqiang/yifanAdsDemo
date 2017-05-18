@@ -67,7 +67,6 @@
     [PluginHelperOC enableNativeColor:YES];
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     [PluginHelperOC setAutoRotate:YES];
-    [PluginHelperOC setVungelInterstitialMode:[[NSUserDefaults standardUserDefaults]boolForKey:NS_DEFAULT_VUNGLE_MODE]];
 
 }
 
