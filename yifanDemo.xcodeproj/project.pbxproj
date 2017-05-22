@@ -70,6 +70,8 @@
 		D553FFA61ED27F6500914CDD /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D553FFA51ED27F6500914CDD /* InMobiSDK.framework */; };
 		D553FFDC1ED2871900914CDD /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D553FFDB1ED2871900914CDD /* AppLovinSDK.framework */; };
 		D553FFEB1ED28BB700914CDD /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D553FFEA1ED28BB700914CDD /* UnityAds.framework */; };
+		D5857BE41ED2E6E500217DD4 /* AvocarrotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55300561ED2BC3A00914CDD /* AvocarrotSDK.framework */; };
+		D5857BE51ED2E6E500217DD4 /* AvocarrotSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D55300561ED2BC3A00914CDD /* AvocarrotSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5C278AD1EC19549002A845F /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C278AC1EC19549002A845F /* AdColony.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,20 @@
 			remoteInfo = PluginSDKResources;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5857BE91ED2E6E500217DD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5857BE51ED2E6E500217DD4 /* AvocarrotSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
@@ -244,6 +260,7 @@
 				D55300111ED2987400914CDD /* AdjustSdk.framework in Frameworks */,
 				B93C3D621E84B3A700C1D0A5 /* QuartzCore.framework in Frameworks */,
 				B980E12D1E5D880F00899615 /* libsqlite3.0.tbd in Frameworks */,
+				D5857BE41ED2E6E500217DD4 /* AvocarrotSDK.framework in Frameworks */,
 				D55300571ED2BC3A00914CDD /* AvocarrotSDK.framework in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
 				D553FFEB1ED28BB700914CDD /* UnityAds.framework in Frameworks */,
@@ -500,6 +517,7 @@
 				B980E0C41E5D668900899615 /* Sources */,
 				B980E0C51E5D668900899615 /* Frameworks */,
 				B980E0C61E5D668900899615 /* Resources */,
+				D5857BE91ED2E6E500217DD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -844,6 +862,7 @@
 		B980E0F61E5D668900899615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AS6U3BZBTC;
@@ -883,6 +902,7 @@
 		B980E0F71E5D668900899615 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AS6U3BZBTC;
