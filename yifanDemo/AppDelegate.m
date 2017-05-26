@@ -24,9 +24,9 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
-    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" completionHandler:^(BOOL isClosed) {
-        
-    }];
+//    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" completionHandler:^(BOOL isClosed) {
+    
+//    }];
 //    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
