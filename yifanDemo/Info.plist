@@ -6,6 +6,8 @@
 	<string>VKcCuZsN0yvZkfHOEiVTw9OHo69gbAH6UvIMT9lU6d2qIKCW1i_ysOEeVNJ5TbC1VUO-e8SlnVT3rmatSapJz2</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>yifanAll</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -73,9 +75,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <!--<key>UIBackgroundModes</key>
-    <array>
-        <string>fetch</string>
-    </array>-->
 </dict>
 </plist>

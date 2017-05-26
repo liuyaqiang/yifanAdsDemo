@@ -10,21 +10,19 @@
 #import "PluginSDK/PluginHelperOC.h"
 #import "MBProgressHUD+EV.h"
 #import "Masonry.h"
-#import <InMobiSDK/InMobiSDK.h>
 #import "YFInterstitialDisplayViewController.h"
 #import "AppDelegate.h"
 #import "YFSettingViewController.h"
 
 #define PAGE @"main"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource,IMInterstitialDelegate>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
     NSString *setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
 }
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
-@property (nonatomic, strong) IMInterstitial *interstitialaa;
 
 @end
 
@@ -212,9 +210,6 @@
     [PluginHelperOC hideBanner];
     [PluginHelperOC hideIcon];
     [PluginHelperOC hideNative];
-    if (self.interstitialaa.isReady) {
-     
-    }
 }
 
 #pragma mark - Get

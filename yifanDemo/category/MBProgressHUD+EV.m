@@ -58,7 +58,7 @@ static const CGFloat minHUDWidth = 0.0;
 #pragma mark MBProgressHUD快捷方法
 - (MBProgressHUD *)showWaitHUD
 {
-    return [self showWaitHUDWithTitle:@"加载中…"];
+    return [self showWaitHUDWithTitle:@"@"""];
 }
 - (MBProgressHUD *)showWaitHUDWithTitle:(NSString*)title
 {
@@ -159,7 +159,7 @@ static const CGFloat minHUDWidth = 0.0;
 
 - (MBProgressHUD *)showWaitHUD
 {
-    return [self showWaitHUDWithTitle:@"加载中…"];
+    return [self showWaitHUDWithTitle:@"@"""];
 }
 
 - (MBProgressHUD *)showWaitHUDWithTitle:(NSString*)title
