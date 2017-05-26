@@ -19,7 +19,7 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource,IMInterstitialDelegate>
 {
-    NSString *setting,*banner, *interstitial, *adsInterstital,*selfInterstial, *native, *video, *icon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
+    NSString *setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
 }
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -118,11 +118,10 @@
         YFSettingViewController *setCtl = [[YFSettingViewController alloc]init];
         [self presentViewController:setCtl animated:YES completion:nil];
     }else if ([text isEqualToString:banner]) {
-//        [AdMgr showAdWithType:@"banner" showWithPage:PAGE showWithEntry:@""];
-//        [PluginHelperOC setBannerPostion:Bottom];
-//        [PluginHelperOC showBannerWithPage:PAGE withEntry:@""];
         [PluginHelperOC showBannerWithPostion:Bottom];
 
+    }else if ([text isEqualToString:hideBanner]){
+        [PluginHelperOC hideBanner];
     }else if ([text isEqualToString:interstitial]){
         YFInterstitialDisplayViewController *ctl = [[YFInterstitialDisplayViewController alloc]init];
         ctl.displayType = YFAdsDisplayTypeDefault;
@@ -137,17 +136,12 @@
         [self.navigationController pushViewController:ctl animated:YES];
     }else if ([text isEqualToString:native]){
         if ([PluginHelperOC hasNative]) {
-//            [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width*2.0 - [UIScreen mainScreen].bounds.size.height*2.0)/2.0, ([UIScreen mainScreen].bounds.size.height*2.0 -  [UIScreen mainScreen].bounds.size.width*2.0)/2 ,[UIScreen mainScreen].bounds.size.height*2.0 , [UIScreen mainScreen].bounds.size.width*2.0)];
-//        [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(636,186,1037,1056)];
-//            [PluginHelperOC isScreenNativeScale:YES];
-//        [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(847,248,1383,1408)];
-//        [PluginHelperOC showNativeAdWithPage:PAGE showWithEntry:@"" showWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width*2.0 - 769)/2.0,([UIScreen mainScreen].bounds.size.height*2.0 -  522)/2,769,522)];
-        [PluginHelperOC showNativeAdWithFrame:CGRectMake(0,0,500,500)];
-
+            [PluginHelperOC showNativeAdWithFrame:CGRectMake(0,0,500,500)];
         }else{
             [self.view showHUDWithTitle:@"no native"];
         }
-        
+    }else if ([text isEqualToString:hideNative]){
+        [PluginHelperOC hideNative];
     }else if ([text isEqualToString:video]){
         if ([PluginHelperOC hasVideo]) {
             [PluginHelperOC showVideo:^(BOOL completrion) {
@@ -162,6 +156,8 @@
         }else{
             [self.view showHUDWithTitle:@"无Icon"];
         }
+    }else if ([text isEqualToString:hideIcon]){
+        [PluginHelperOC hideIcon];
     }else if ([text isEqualToString:more]){
         if ([PluginHelperOC hasMore]) {
             [PluginHelperOC showMore];
@@ -236,8 +232,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-      setting = @"setting" , banner = @"banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", video = @"video", icon = @"icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
-        _dataArr = @[@[setting ,banner, interstitial, adsInterstital,selfInterstial,native, video, icon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
+      setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
+        _dataArr = @[@[setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
     }
     return _dataArr;
 }
