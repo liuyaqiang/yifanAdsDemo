@@ -142,8 +142,11 @@
         [PluginHelperOC hideNative];
     }else if ([text isEqualToString:video]){
         if ([PluginHelperOC hasVideo]) {
-            [PluginHelperOC showVideo:^(BOOL completrion) {
-                
+            
+            [PluginHelperOC showVideo:^{
+                //NSLog(@"video show");
+            } withCompletion:^(BOOL completrion) {
+                //NSLog(@"video end");
             }];
         }else{
             [self.view showHUDWithTitle:@"no video"];
@@ -174,7 +177,9 @@
         }
     }else if ([text isEqualToString:gift]){
         if ([PluginHelperOC hasInterstitialGift:PAGE]) {
-            [PluginHelperOC showInterstitialGift:PAGE completionHandler:^(BOOL isClosed) {
+            [PluginHelperOC showInterstitialGift:PAGE shownHandler:^{
+                NSLog(@"interstitial show");
+            } completionHandler:^(BOOL isClosed) {
                 
             }];
         }else{
@@ -190,7 +195,10 @@
     }else if ([text isEqualToString:videoTask]){
         NSString *vt = [PluginHelperOC hasVideoOrTask];
         if ([vt isEqualToString:@"video"]) {
-            [PluginHelperOC showVideo:^(BOOL completrion) {
+            [PluginHelperOC showVideo:^{
+                //NSLog(@"video show");
+            } withCompletion:^(BOOL completrion) {
+                //NSLog(@"video end");
             }];
         } else if ([vt isEqualToString:@"task"]){
             __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
