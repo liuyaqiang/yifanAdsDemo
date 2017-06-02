@@ -113,16 +113,22 @@
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
     if([text isEqualToString:interstitial]){
-        [PluginHelperOC showInterstialWithDisplayType:self.displayType withPage:@"" completionHandler:^(BOOL isCompletion) {
+        [PluginHelperOC showInterstialWithDisplayType:self.displayType withPage:@"" shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL isCompletion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
     }else if ([text isEqualToString:posIntAhead]){
-        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:NO withPage:PAGE completionHandler:^(BOOL completion) {
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:NO withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
             
         }];
     }else if ([text isEqualToString:posIntAfter]){
-        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE completionHandler:^(BOOL completion) {
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
     }
