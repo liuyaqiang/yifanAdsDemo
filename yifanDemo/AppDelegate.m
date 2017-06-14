@@ -27,7 +27,8 @@
 //    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" completionHandler:^(BOOL isClosed) {
     
 //    }];
-//    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
+    [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
+    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
     }];
@@ -66,8 +67,8 @@
     [PluginHelperOC setScaleEnable:YES];
     [PluginHelperOC setIconScaleEnable:YES];
     [PluginHelperOC enableNativeColor:YES];
-    [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
-    [PluginHelperOC setAutoRotate:YES];
+    //[PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
+    //[PluginHelperOC setAutoRotate:YES];
 
 }
 
