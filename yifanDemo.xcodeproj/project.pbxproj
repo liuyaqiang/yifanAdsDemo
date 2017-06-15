@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3114D9571EEA8534007984FB /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114D9561EEA8534007984FB /* DUModuleSDK.framework */; };
 		318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
 		318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
@@ -138,7 +137,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3114D9561EEA8534007984FB /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		B92AD3741EA6229B00EE553A /* YFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSettingViewController.h; sourceTree = "<group>"; };
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 				B93C3D641E84B3B000C1D0A5 /* Security.framework in Frameworks */,
 				B93C3D621E84B3A700C1D0A5 /* QuartzCore.framework in Frameworks */,
 				B980E12D1E5D880F00899615 /* libsqlite3.0.tbd in Frameworks */,
-				3114D9571EEA8534007984FB /* DUModuleSDK.framework in Frameworks */,
 				B980E12F1E5D881900899615 /* libz.tbd in Frameworks */,
 				B980E11E1E5D86D100899615 /* WebKit.framework in Frameworks */,
 				B980E12B1E5D880300899615 /* libc++.tbd in Frameworks */,
@@ -317,7 +314,6 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				3114D9561EEA8534007984FB /* DUModuleSDK.framework */,
 				B96A40F61EE4F07B004EB4A8 /* HeyzapAds.framework */,
 				D56899821EE00FA3003AC57C /* Bolts.framework */,
 				D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */,
