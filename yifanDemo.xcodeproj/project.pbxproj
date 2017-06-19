@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
+		318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
 		B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */; };
@@ -27,7 +29,6 @@
 		B980E0F11E5D668900899615 /* yifanDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E0F01E5D668900899615 /* yifanDemoUITests.m */; };
 		B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E1091E5D862D00899615 /* MediaPlayer.framework */; };
 		B980E10C1E5D863600899615 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10B1E5D863600899615 /* CoreMedia.framework */; };
-		B980E10E1E5D864700899615 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
 		B980E1101E5D865600899615 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10F1E5D865600899615 /* CoreMotion.framework */; };
 		B980E1121E5D866400899615 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E1111E5D866400899615 /* GLKit.framework */; };
 		B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E1131E5D867900899615 /* AudioToolbox.framework */; };
@@ -72,8 +73,8 @@
 		D56898B11ED90C72003AC57C /* AvocarrotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */; };
 		D56898B21ED90C72003AC57C /* AvocarrotSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */; };
-		D56899811EE00F9D003AC57C /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
 		D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899821EE00FA3003AC57C /* Bolts.framework */; };
+		D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -233,6 +234,7 @@
 		D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		D56899821EE00FA3003AC57C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,7 +243,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */,
 				D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */,
+				D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */,
 				B93C3D6A1E84B42200C1D0A5 /* CoreTelephony.framework in Frameworks */,
 				B980E1251E5D87D900899615 /* Foundation.framework in Frameworks */,
 				B980E1231E5D87CC00899615 /* UIKit.framework in Frameworks */,
@@ -253,8 +257,7 @@
 				B93C3D681E84B3F600C1D0A5 /* MobileCoreServices.framework in Frameworks */,
 				B980E1161E5D868700899615 /* SystemConfiguration.framework in Frameworks */,
 				D56898AD1ED90C60003AC57C /* InMobiSDK.framework in Frameworks */,
-				D56899811EE00F9D003AC57C /* FBAudienceNetwork.framework in Frameworks */,
-				B980E10E1E5D864700899615 /* AVFoundation.framework in Frameworks */,
+				318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */,
 				B93C3D661E84B3B600C1D0A5 /* CFNetwork.framework in Frameworks */,
 				D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */,
 				B93C3D641E84B3B000C1D0A5 /* Security.framework in Frameworks */,
@@ -314,6 +317,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */,
 				B96A40F61EE4F07B004EB4A8 /* HeyzapAds.framework */,
 				D56899821EE00FA3003AC57C /* Bolts.framework */,
 				D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */,
@@ -898,7 +902,7 @@
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yifan.yifanDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobula.sample.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -938,7 +942,7 @@
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yifan.yifanDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobula.sample.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

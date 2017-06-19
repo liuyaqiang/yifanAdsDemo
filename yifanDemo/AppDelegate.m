@@ -24,10 +24,20 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
-//    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" completionHandler:^(BOOL isClosed) {
     
+
 //    }];
     [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
+    [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
+    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
+
+    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" shownHandler:^(){
+        
+    } completionHandler:^(BOOL isClosed) {
+        
+    }];
+//    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
+    
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
     }];
@@ -66,8 +76,8 @@
     [PluginHelperOC setScaleEnable:YES];
     [PluginHelperOC setIconScaleEnable:YES];
     [PluginHelperOC enableNativeColor:YES];
-    [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
-    [PluginHelperOC setAutoRotate:YES];
+    //[PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
+    //[PluginHelperOC setAutoRotate:YES];
 
 }
 
@@ -92,6 +102,12 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [PluginHelperOC showInterstitialWithPage:@"switchin" withEntry:@"" shownHandler:^(){
+        
+    } completionHandler:^(BOOL isClosed) {
+        
+    }];
 }
 
 

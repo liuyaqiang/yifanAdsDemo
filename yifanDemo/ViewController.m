@@ -116,7 +116,8 @@
         YFSettingViewController *setCtl = [[YFSettingViewController alloc]init];
         [self presentViewController:setCtl animated:YES completion:nil];
     }else if ([text isEqualToString:banner]) {
-        [PluginHelperOC showBannerWithPostion:Bottom];
+        //[PluginHelperOC showBannerWithPostion:Bottom];
+        [PluginHelperOC showBanner];
 
     }else if ([text isEqualToString:hideBanner]){
         [PluginHelperOC hideBanner];
