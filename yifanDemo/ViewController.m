@@ -18,7 +18,7 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
-    NSString *setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
+    NSString *showNextControl,*setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo;
 }
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -101,7 +101,7 @@
     NSString *text = rowArr[indexPath.row];
     cell.textLabel.text = text;
     cell.backgroundColor = [UIColor whiteColor];
-    if ([text isEqualToString:setting]) {
+    if ([text isEqualToString:setting] || [text isEqualToString:showNextControl]) {
         cell.backgroundColor = [UIColor lightGrayColor];
     }
     return cell;
@@ -112,7 +112,11 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
-    if ([text isEqualToString:setting]) {
+    if ([text isEqualToString:showNextControl]) {
+        ViewController *ctl = [[ViewController alloc]init];
+        [self.navigationController pushViewController:ctl animated:YES];
+    }
+   else if ([text isEqualToString:setting]) {
         YFSettingViewController *setCtl = [[YFSettingViewController alloc]init];
         [self presentViewController:setCtl animated:YES completion:nil];
     }else if ([text isEqualToString:banner]) {
@@ -236,8 +240,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-      setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
-        _dataArr = @[@[setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
+        showNextControl = @"多界面test", setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
+        _dataArr = @[@[showNextControl,setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
     }
     return _dataArr;
 }
