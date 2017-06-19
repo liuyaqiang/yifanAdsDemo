@@ -27,7 +27,7 @@
 //    [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" completionHandler:^(BOOL isClosed) {
     
 //    }];
-//    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
+    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
     }];
