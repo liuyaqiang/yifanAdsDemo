@@ -30,7 +30,6 @@
 //    }];
     [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
-    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
 
     [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" shownHandler:^(){
         
