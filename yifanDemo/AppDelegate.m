@@ -24,6 +24,7 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
+    [PluginHelperOC setPushEnable:YES];
     [PluginHelperOC showBanner];
 
 //    }];
@@ -114,6 +115,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
