@@ -78,6 +78,9 @@
     [PluginHelperOC enableNativeColor:YES];
     //[PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     //[PluginHelperOC setAutoRotate:YES];
+    [PluginHelperOC setUmeng:@"umengkey123" withAnalyticsType:1];
+    [PluginHelperOC setAdjustWithApptoken:@"adjusttoken123" withEnvironment:@"ADJEnvironmentSandbox"];
+    [PluginHelperOC setFacebookTrack:@"facebookid"];
 
 }
 
