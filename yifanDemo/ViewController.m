@@ -151,7 +151,11 @@
             [PluginHelperOC showVideo:^{
                 //NSLog(@"video show");
             } withCompletion:^(BOOL completrion) {
-                //NSLog(@"video end");
+                if (completrion) {
+                    [self.view showHUDWithTitle:@"kan wan"];
+                }else{
+                    [self.view showHUDWithTitle:@"mei kan wan"];
+                }
             }];
         }else{
             [self.view showHUDWithTitle:@"no video"];
@@ -168,7 +172,7 @@
         if ([PluginHelperOC hasMore]) {
             [PluginHelperOC showMore];
         }else{
-            [self.view showHUDWithTitle:@"on more"];
+            [self.view showHUDWithTitle:@"no more"];
         }
     }else if ([text isEqualToString:offer]){
         __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -185,7 +189,6 @@
             [PluginHelperOC showInterstitialGift:PAGE shownHandler:^{
                 NSLog(@"interstitial show");
             } completionHandler:^(BOOL isClosed) {
-                
             }];
         }else{
             [self.view showHUDWithTitle:@"no gift"];
@@ -203,7 +206,11 @@
             [PluginHelperOC showVideo:^{
                 //NSLog(@"video show");
             } withCompletion:^(BOOL completrion) {
-                //NSLog(@"video end");
+                if (completrion) {
+                    [self.view showHUDWithTitle:@"kan wan"];
+                }else{
+                    [self.view showHUDWithTitle:@"mei kan wan"];
+                }
             }];
         } else if ([vt isEqualToString:@"task"]){
             __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];

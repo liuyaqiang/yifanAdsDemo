@@ -12,7 +12,7 @@
 @interface AppDelegate ()
 
 @end
-
+F
 @implementation AppDelegate
 
 
@@ -24,12 +24,12 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
-    
+    [PluginHelperOC setPushEnable:YES];
+    [PluginHelperOC showBanner];
 
 //    }];
     [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
     [PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
-    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
 
     [PluginHelperOC showInterstitialWithPage:@"home" withEntry:@"" shownHandler:^(){
         
@@ -117,5 +117,6 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
 
 }
+
 
 @end
