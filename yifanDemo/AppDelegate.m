@@ -12,7 +12,7 @@
 @interface AppDelegate ()
 
 @end
-
+F
 @implementation AppDelegate
 
 
@@ -37,7 +37,7 @@
         
     }];
 //    [PluginHelperOC setPostionOfLandscapeInPortraitMode:Left];
-    
+    [PluginHelperOC setPushEnable:YES];
     [PluginHelperOC exeActiveTaskReward:^(NSString *reward) {
         NSLog(@"123<>>><<><<><>><<><><>><<>><%@",reward);
     }];
@@ -117,5 +117,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+
+}
+
 
 @end
