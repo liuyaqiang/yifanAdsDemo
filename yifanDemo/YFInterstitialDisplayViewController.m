@@ -14,7 +14,7 @@
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
-    NSString *interstitial,*posIntAhead, *posIntAfter;
+    NSString *interstitial,*posIntAhead;
 }
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
@@ -125,15 +125,20 @@
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
             
         }];
-    }else if ([text isEqualToString:posIntAfter]){
-        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
-            NSLog(@"interstitial show");
-        } completionHandler:^(BOOL completion) {
-            NSLog(@"%@ --- %@ isCompletion",self.title,text);
-        }];
+        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
+        [AlertView show];
     }
 
 
+}
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
+        NSLog(@"interstitial show");
+    } completionHandler:^(BOOL completion) {
+        
+    }];
 }
 #pragma mark - response Event
 - (void)hidden
@@ -158,8 +163,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-         interstitial = @"正常出",posIntAhead = @"前出",posIntAfter = @"后出";
-        _dataArr = @[@[ interstitial,posIntAhead,posIntAfter]];
+         interstitial = @"正常出",posIntAhead = @"前出";
+        _dataArr = @[@[ interstitial,posIntAhead]];
     }
     return _dataArr;
 }
