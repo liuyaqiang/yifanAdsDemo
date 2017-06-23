@@ -56,7 +56,7 @@
     titleLa.text = [NSString stringWithFormat:@"appkey:%@",AppKey];
     titleLa.textColor = [UIColor blueColor];
     self.navigationItem.titleView = titleLa;
-    [self hidden];
+    
 
 }
 - (void)viewDidAppear:(BOOL)animated
@@ -119,6 +119,7 @@
         ViewController *ctl = [[ViewController alloc]init];
         ctl.index = self.index + 1;
         [self.navigationController pushViewController:ctl animated:YES];
+        [self hidden];
     }
    else if ([text isEqualToString:setting]) {
         YFSettingViewController *setCtl = [[YFSettingViewController alloc]init];
