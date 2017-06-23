@@ -36,8 +36,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
-
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +56,12 @@
     titleLa.text = [NSString stringWithFormat:@"appkey:%@",AppKey];
     titleLa.textColor = [UIColor blueColor];
     self.navigationItem.titleView = titleLa;
+    [self hidden];
 
+}
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 #pragma mark -
 #pragma mark UITableViewDataSource/UITableViewDelegate
@@ -114,6 +117,7 @@
     NSString *text = rowArr[indexPath.row];
     if ([text isEqualToString:showNextControl]) {
         ViewController *ctl = [[ViewController alloc]init];
+        ctl.index = self.index + 1;
         [self.navigationController pushViewController:ctl animated:YES];
     }
    else if ([text isEqualToString:setting]) {
@@ -247,7 +251,7 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-        showNextControl = @"多界面test", setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
+        showNextControl  = [NSString stringWithFormat:@"多界面test %d",self.index + 1], setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask";
         _dataArr = @[@[showNextControl,setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask]];
     }
     return _dataArr;
