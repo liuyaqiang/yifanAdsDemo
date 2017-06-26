@@ -24,7 +24,6 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
-    [PluginHelperOC setPushEnable:YES];
     [PluginHelperOC showBanner];
 
 //    }];
