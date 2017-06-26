@@ -14,8 +14,6 @@
 #import "AppDelegate.h"
 #import "YFSettingViewController.h"
 
-#define PAGE @"main"
-
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
     NSString *showNextControl,*setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo, *refreshGeo;
@@ -200,7 +198,15 @@
             [self.view showHUDWithTitle:@"no gift"];
         }
     }else if ([text isEqualToString:followTask]){
-        
+        if ([PluginHelperOC hasFollowTaskForFeature:@"facebook"]) {
+            __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            [PluginHelperOC clickFollowTaskForFeature:@"facebook" withCoins:-1 completionHandler:^(NSString *str) {
+                NSLog(@"offer completion......%@",str);
+                cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",([cell.detailTextLabel.text integerValue] + [str integerValue])];
+            }];
+        }else{
+            [self.view showHUDWithTitle:@"no follow task for facebook"];
+        }
     }else if ([text isEqualToString:clearFollow]){
         [PluginHelperOC clearFollow];
 
