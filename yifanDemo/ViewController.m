@@ -13,8 +13,7 @@
 #import "YFInterstitialDisplayViewController.h"
 #import "AppDelegate.h"
 #import "YFSettingViewController.h"
-
-#define PAGE @"main"
+#import "UIViewController+BackButtonHandler.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -47,6 +46,12 @@
     [rightBu addTarget:self action:@selector(hidden) forControlEvents:UIControlEventTouchUpInside];
        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightBu];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+
+}
+- (BOOL)navigationShouldPopOnBackButton {
+    [self hidden];
+    return YES;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -57,12 +62,19 @@
     titleLa.textColor = [UIColor blueColor];
     self.navigationItem.titleView = titleLa;
     
-
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+}
+- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated
+{
+    return self;
 }
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 }
+
 #pragma mark -
 #pragma mark UITableViewDataSource/UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

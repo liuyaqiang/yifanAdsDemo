@@ -58,6 +58,7 @@
 		B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36B1E5EB66B00899615 /* View+MASAdditions.m */; };
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
 		B9A126681ECD3E9A00A3F776 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9A126671ECD3E9A00A3F776 /* launch.jpg */; };
+		B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */; };
 		D56898931ED90B75003AC57C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898921ED90B75003AC57C /* GoogleMobileAds.framework */; };
 		D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898941ED90C4E003AC57C /* UMMobClick.framework */; };
 		D56898991ED90C4E003AC57C /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898951ED90C4E003AC57C /* UnityAds.framework */; };
@@ -219,6 +220,8 @@
 		B980E36D1E5EB66B00899615 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		B9A126671ECD3E9A00A3F776 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		B9F73FE31F010A0E002DF2F7 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		D56898921ED90B75003AC57C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D56898941ED90C4E003AC57C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		D56898951ED90C4E003AC57C /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
@@ -450,6 +453,8 @@
 		B980E1371E5E8C2E00899615 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				B9F73FE31F010A0E002DF2F7 /* UIViewController+BackButtonHandler.h */,
+				B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */,
 				B980E1381E5E8C2E00899615 /* MBProgressHUD+EV.h */,
 				B980E1391E5E8C2E00899615 /* MBProgressHUD+EV.m */,
 				B980E13B1E5E8D3600899615 /* MBProgressHUD.h */,
@@ -716,6 +721,7 @@
 				B980E0D01E5D668900899615 /* AppDelegate.m in Sources */,
 				B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */,
 				B980E3701E5EB66B00899615 /* MASCompositeConstraint.m in Sources */,
+				B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */,
 				B980E3741E5EB66B00899615 /* MASViewAttribute.m in Sources */,
 				B980E3721E5EB66B00899615 /* MASConstraintMaker.m in Sources */,
 				B980E3761E5EB66B00899615 /* NSArray+MASAdditions.m in Sources */,
