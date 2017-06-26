@@ -10,7 +10,8 @@
 #import "PluginSDK/PluginHelperOC.h"
 #import "MBProgressHUD+EV.h"
 #import "Masonry.h"
-#define PAGE @"main"
+#import "YFCommonHeader.h"
+
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -113,7 +114,7 @@
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
     if([text isEqualToString:interstitial]){
-        [PluginHelperOC showInterstialWithDisplayType:self.displayType withPage:@"" shownHandler:^{
+        [PluginHelperOC showInterstialWithDisplayType:self.displayType withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL isCompletion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
