@@ -256,9 +256,9 @@
 #pragma mark - response Event
 - (void)hidden
 {
+    [PluginHelperOC hideNative];
     [PluginHelperOC hideBanner];
     [PluginHelperOC hideIcon];
-    [PluginHelperOC hideNative];
 }
 
 #pragma mark - Get
