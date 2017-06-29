@@ -15,7 +15,7 @@
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
-    NSString *interstitial,*posIntAhead;
+    NSString *interstitial,*posIntAhead_noGap, *posIntAhead_gap;
 }
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
@@ -119,14 +119,25 @@
         } completionHandler:^(BOOL isCompletion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-    }else if ([text isEqualToString:posIntAhead]){
+    }else if ([text isEqualToString:posIntAhead_noGap]){
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:NO withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
             
         }];
-        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
+        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出(不受gap控制)" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
+        AlertView.tag = 0;
+        [AlertView show];
+    }else if ([text isEqualToString:posIntAhead_gap]){
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:YES withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
+            NSLog(@"%@ --- %@ isCompletion",self.title,text);
+            
+        }];
+        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出(受gap控制)" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
+        AlertView.tag = 1;
         [AlertView show];
     }
 
@@ -135,11 +146,19 @@
 #pragma mark - UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
-        NSLog(@"interstitial show");
-    } completionHandler:^(BOOL completion) {
-        
-    }];
+    if (alertView.tag == 0) {
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
+            
+        }];
+    }else{
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:YES withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
+            
+        }];
+    }
 }
 #pragma mark - response Event
 - (void)hidden
@@ -164,8 +183,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-         interstitial = @"正常出",posIntAhead = @"前出";
-        _dataArr = @[@[ interstitial,posIntAhead]];
+         interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)";
+        _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAhead_gap]];
     }
     return _dataArr;
 }
