@@ -67,7 +67,6 @@
 		D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989C1ED90C59003AC57C /* AdjustSdk.framework */; };
 		D56898A41ED90C59003AC57C /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989D1ED90C59003AC57C /* AppLovinSDK.framework */; };
 		D56898A51ED90C59003AC57C /* AvocarrotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */; };
-		D56898AD1ED90C60003AC57C /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898A91ED90C60003AC57C /* InMobiSDK.framework */; };
 		D56898AE1ED90C60003AC57C /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898AA1ED90C60003AC57C /* libAppnextLib.a */; };
 		D56898AF1ED90C60003AC57C /* libAppnextNativeAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898AB1ED90C60003AC57C /* libAppnextNativeAdsSDK.a */; };
 		D56898B01ED90C60003AC57C /* libAppnextSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898AC1ED90C60003AC57C /* libAppnextSDKCore.a */; };
@@ -75,6 +74,8 @@
 		D56898B21ED90C72003AC57C /* AvocarrotSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */; };
 		D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899821EE00FA3003AC57C /* Bolts.framework */; };
+		D57C97781F0A21A100046908 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97771F0A21A100046908 /* InMobiSDK.framework */; };
+		D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */; };
 		D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
@@ -230,13 +231,15 @@
 		D568989C1ED90C59003AC57C /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
 		D568989D1ED90C59003AC57C /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
 		D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AvocarrotSDK.framework; sourceTree = "<group>"; };
-		D56898A91ED90C60003AC57C /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
 		D56898AA1ED90C60003AC57C /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
 		D56898AB1ED90C60003AC57C /* libAppnextNativeAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextNativeAdsSDK.a; sourceTree = "<group>"; };
 		D56898AC1ED90C60003AC57C /* libAppnextSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextSDKCore.a; sourceTree = "<group>"; };
 		D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		D56899821EE00FA3003AC57C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D57C97771F0A21A100046908 /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
+		D57C97791F0A228E00046908 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
+		D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,7 +262,6 @@
 				B980E1181E5D86B400899615 /* CoreGraphics.framework in Frameworks */,
 				B93C3D681E84B3F600C1D0A5 /* MobileCoreServices.framework in Frameworks */,
 				B980E1161E5D868700899615 /* SystemConfiguration.framework in Frameworks */,
-				D56898AD1ED90C60003AC57C /* InMobiSDK.framework in Frameworks */,
 				318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */,
 				B93C3D661E84B3B600C1D0A5 /* CFNetwork.framework in Frameworks */,
 				D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */,
@@ -288,6 +290,7 @@
 				B980E1101E5D865600899615 /* CoreMotion.framework in Frameworks */,
 				D56898B01ED90C60003AC57C /* libAppnextSDKCore.a in Frameworks */,
 				B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */,
+				D57C97781F0A21A100046908 /* InMobiSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +323,12 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D57C97771F0A21A100046908 /* InMobiSDK.framework */,
 				D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */,
 				B96A40F61EE4F07B004EB4A8 /* HeyzapAds.framework */,
 				D56899821EE00FA3003AC57C /* Bolts.framework */,
 				D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */,
 				D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */,
-				D56898A91ED90C60003AC57C /* InMobiSDK.framework */,
 				D56898AA1ED90C60003AC57C /* libAppnextLib.a */,
 				D56898AB1ED90C60003AC57C /* libAppnextNativeAdsSDK.a */,
 				D56898AC1ED90C60003AC57C /* libAppnextSDKCore.a */,
@@ -459,6 +462,8 @@
 				B980E1391E5E8C2E00899615 /* MBProgressHUD+EV.m */,
 				B980E13B1E5E8D3600899615 /* MBProgressHUD.h */,
 				B980E13C1E5E8D3600899615 /* MBProgressHUD.m */,
+				D57C97791F0A228E00046908 /* CustomIOSAlertView.h */,
+				D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */,
 				B980E3701E5EB66B00899615 /* MASCompositeConstraint.m in Sources */,
 				B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */,
+				D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */,
 				B980E3741E5EB66B00899615 /* MASViewAttribute.m in Sources */,
 				B980E3721E5EB66B00899615 /* MASConstraintMaker.m in Sources */,
 				B980E3761E5EB66B00899615 /* NSArray+MASAdditions.m in Sources */,

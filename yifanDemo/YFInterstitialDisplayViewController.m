@@ -11,6 +11,7 @@
 #import "MBProgressHUD+EV.h"
 #import "Masonry.h"
 #import "YFCommonHeader.h"
+#import "CustomIOSAlertView.h"
 
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -124,24 +125,38 @@
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
-            
         }];
-        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出(不受gap控制)" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
-        AlertView.tag = 0;
-        [AlertView show];
+        
+        CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc]init];
+        [alertView setContainerView:[[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 50)]];
+        [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"后出(不受gap控制)", nil]];
+        [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
+            [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
+                NSLog(@"interstitial show");
+            } completionHandler:^(BOOL completion) {
+            }];
+        }];
+        [alertView show];
     }else if ([text isEqualToString:posIntAhead_gap]){
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:YES withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
-            
         }];
-        UIAlertView *AlertView = [[UIAlertView alloc]initWithTitle:@"后出(受gap控制)" message:@"" delegate:self cancelButtonTitle:@"展示" otherButtonTitles: nil];
-        AlertView.tag = 1;
-        [AlertView show];
+        
+        CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc]init];
+        [alertView setContainerView:[[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 50)]];
+        [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"后出(受gap控制)", nil]];
+        [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
+            [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:YES withPage:PAGE shownHandler:^{
+                NSLog(@"interstitial show");
+            } completionHandler:^(BOOL completion) {
+            }];
+        }];
+        [alertView show];
     }
-
-
+    
+    
 }
 #pragma mark - UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -165,7 +180,7 @@
 {
     [PluginHelperOC hideBanner];
     [PluginHelperOC hideIcon];
-    [PluginHelperOC hideNative];    
+    [PluginHelperOC hideNative];
 }
 
 #pragma mark - Get
@@ -183,7 +198,7 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-         interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)";
+        interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)";
         _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAhead_gap]];
     }
     return _dataArr;
