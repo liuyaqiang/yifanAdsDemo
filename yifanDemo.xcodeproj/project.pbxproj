@@ -76,6 +76,7 @@
 		D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899821EE00FA3003AC57C /* Bolts.framework */; };
 		D57C97781F0A21A100046908 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97771F0A21A100046908 /* InMobiSDK.framework */; };
 		D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */; };
+		D57C97801F0B392E00046908 /* IronSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C977F1F0B392D00046908 /* IronSource.framework */; };
 		D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
@@ -240,6 +241,7 @@
 		D57C97771F0A21A100046908 /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
 		D57C97791F0A228E00046908 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
 		D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
+		D57C977F1F0B392D00046908 /* IronSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IronSource.framework; sourceTree = "<group>"; };
 		D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +284,7 @@
 				D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */,
 				B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */,
 				D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */,
+				D57C97801F0B392E00046908 /* IronSource.framework in Frameworks */,
 				D568989A1ED90C4E003AC57C /* VungleSDK.framework in Frameworks */,
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
 				D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */,
@@ -323,6 +326,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D57C977F1F0B392D00046908 /* IronSource.framework */,
 				D57C97771F0A21A100046908 /* InMobiSDK.framework */,
 				D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */,
 				B96A40F61EE4F07B004EB4A8 /* HeyzapAds.framework */,
