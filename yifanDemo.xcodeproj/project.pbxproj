@@ -78,6 +78,9 @@
 		D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */; };
 		D57C97AF1F0B963300046908 /* IronSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97AD1F0B962200046908 /* IronSource.framework */; };
 		D57C97B11F0B986400046908 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97B01F0B986400046908 /* libxml2.tbd */; };
+		D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C98541F0DD59100046908 /* MVSDK.framework */; };
+		D57C985B1F0DD59300046908 /* MVSDKInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */; };
+		D57C985D1F0DD59A00046908 /* MVSDKReward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C985C1F0DD59A00046908 /* MVSDKReward.framework */; };
 		D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
@@ -244,6 +247,9 @@
 		D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		D57C97AD1F0B962200046908 /* IronSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IronSource.framework; sourceTree = "<group>"; };
 		D57C97B01F0B986400046908 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		D57C98541F0DD59100046908 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDK.framework; sourceTree = "<group>"; };
+		D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDKInterstitial.framework; sourceTree = "<group>"; };
+		D57C985C1F0DD59A00046908 /* MVSDKReward.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDKReward.framework; sourceTree = "<group>"; };
 		D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,7 +269,9 @@
 				B980E1231E5D87CC00899615 /* UIKit.framework in Frameworks */,
 				B980E1271E5D87EC00899615 /* AdSupport.framework in Frameworks */,
 				D56898A51ED90C59003AC57C /* AvocarrotSDK.framework in Frameworks */,
+				D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */,
 				B980E10C1E5D863600899615 /* CoreMedia.framework in Frameworks */,
+				D57C985B1F0DD59300046908 /* MVSDKInterstitial.framework in Frameworks */,
 				D56898A41ED90C59003AC57C /* AppLovinSDK.framework in Frameworks */,
 				B980E1181E5D86B400899615 /* CoreGraphics.framework in Frameworks */,
 				B93C3D681E84B3F600C1D0A5 /* MobileCoreServices.framework in Frameworks */,
@@ -287,6 +295,7 @@
 				B980E11A1E5D86BC00899615 /* MessageUI.framework in Frameworks */,
 				D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */,
 				B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */,
+				D57C985D1F0DD59A00046908 /* MVSDKReward.framework in Frameworks */,
 				D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */,
 				D568989A1ED90C4E003AC57C /* VungleSDK.framework in Frameworks */,
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
@@ -329,6 +338,9 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D57C985C1F0DD59A00046908 /* MVSDKReward.framework */,
+				D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */,
+				D57C98541F0DD59100046908 /* MVSDK.framework */,
 				D57C97AD1F0B962200046908 /* IronSource.framework */,
 				D57C97771F0A21A100046908 /* InMobiSDK.framework */,
 				D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */,
