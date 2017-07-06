@@ -59,7 +59,6 @@
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
 		B9A126681ECD3E9A00A3F776 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9A126671ECD3E9A00A3F776 /* launch.jpg */; };
 		B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */; };
-		D56898931ED90B75003AC57C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898921ED90B75003AC57C /* GoogleMobileAds.framework */; };
 		D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898941ED90C4E003AC57C /* UMMobClick.framework */; };
 		D56898991ED90C4E003AC57C /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898951ED90C4E003AC57C /* UnityAds.framework */; };
 		D568989A1ED90C4E003AC57C /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898971ED90C4E003AC57C /* VungleSDK.framework */; };
@@ -81,6 +80,7 @@
 		D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C98541F0DD59100046908 /* MVSDK.framework */; };
 		D57C985B1F0DD59300046908 /* MVSDKInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */; };
 		D57C985D1F0DD59A00046908 /* MVSDKReward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C985C1F0DD59A00046908 /* MVSDKReward.framework */; };
+		D57C99091F0E1ABC00046908 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C99081F0E1ABC00046908 /* GoogleMobileAds.framework */; };
 		D582906C1EF2318D00B0B880 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */; };
 		D5DC00C21EA77DFE00172701 /* PluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DC00BF1EA77DF200172701 /* PluginSDK.framework */; };
 /* End PBXBuildFile section */
@@ -228,7 +228,6 @@
 		B9A126671ECD3E9A00A3F776 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 		B9F73FE31F010A0E002DF2F7 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
-		D56898921ED90B75003AC57C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D56898941ED90C4E003AC57C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		D56898951ED90C4E003AC57C /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		D56898971ED90C4E003AC57C /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
@@ -250,6 +249,7 @@
 		D57C98541F0DD59100046908 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDK.framework; sourceTree = "<group>"; };
 		D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDKInterstitial.framework; sourceTree = "<group>"; };
 		D57C985C1F0DD59A00046908 /* MVSDKReward.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDKReward.framework; sourceTree = "<group>"; };
+		D57C99081F0E1ABC00046908 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D582906B1EF2318D00B0B880 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
 		D5DC00B81EA77DF200172701 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,6 +286,7 @@
 				B980E11E1E5D86D100899615 /* WebKit.framework in Frameworks */,
 				B980E12B1E5D880300899615 /* libc++.tbd in Frameworks */,
 				D56898B11ED90C72003AC57C /* AvocarrotSDK.framework in Frameworks */,
+				D57C99091F0E1ABC00046908 /* GoogleMobileAds.framework in Frameworks */,
 				B96A40F71EE4F07B004EB4A8 /* HeyzapAds.framework in Frameworks */,
 				D56898991ED90C4E003AC57C /* UnityAds.framework in Frameworks */,
 				B980E1291E5D87FA00899615 /* libc++abi.tbd in Frameworks */,
@@ -301,7 +302,6 @@
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
 				D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */,
 				D56898A21ED90C59003AC57C /* AdColony.framework in Frameworks */,
-				D56898931ED90B75003AC57C /* GoogleMobileAds.framework in Frameworks */,
 				B980E1101E5D865600899615 /* CoreMotion.framework in Frameworks */,
 				D56898B01ED90C60003AC57C /* libAppnextSDKCore.a in Frameworks */,
 				B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */,
@@ -338,6 +338,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				D57C99081F0E1ABC00046908 /* GoogleMobileAds.framework */,
 				D57C985C1F0DD59A00046908 /* MVSDKReward.framework */,
 				D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */,
 				D57C98541F0DD59100046908 /* MVSDK.framework */,
@@ -358,7 +359,6 @@
 				D56898941ED90C4E003AC57C /* UMMobClick.framework */,
 				D56898951ED90C4E003AC57C /* UnityAds.framework */,
 				D56898961ED90C4E003AC57C /* VungleSDK.embeddedframework */,
-				D56898921ED90B75003AC57C /* GoogleMobileAds.framework */,
 				B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */,
 			);
 			path = FrameWork;
