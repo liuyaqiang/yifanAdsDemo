@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3181C3031F14D68300008839 /* ZZAdSDK.framework */; };
 		318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
 		318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
 		31CE9BEF1F0F25B10068BEF9 /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */; };
-		31FAD4171F0E30300005891E /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FAD4161F0E30300005891E /* ZZAdSDK.framework */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
 		B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */; };
@@ -148,8 +148,8 @@
 
 /* Begin PBXFileReference section */
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
+		3181C3031F14D68300008839 /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
 		31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = zzAdImage.bundle; sourceTree = "<group>"; };
-		31FAD4161F0E30300005891E /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
 		B92AD3741EA6229B00EE553A /* YFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSettingViewController.h; sourceTree = "<group>"; };
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
@@ -271,6 +271,7 @@
 				B93C3D6A1E84B42200C1D0A5 /* CoreTelephony.framework in Frameworks */,
 				B980E1251E5D87D900899615 /* Foundation.framework in Frameworks */,
 				B980E1231E5D87CC00899615 /* UIKit.framework in Frameworks */,
+				3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */,
 				B980E1271E5D87EC00899615 /* AdSupport.framework in Frameworks */,
 				D56898A51ED90C59003AC57C /* AvocarrotSDK.framework in Frameworks */,
 				D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */,
@@ -310,7 +311,6 @@
 				D56898B01ED90C60003AC57C /* libAppnextSDKCore.a in Frameworks */,
 				B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */,
 				D57C97781F0A21A100046908 /* InMobiSDK.framework in Frameworks */,
-				31FAD4171F0E30300005891E /* ZZAdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +343,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				31FAD4161F0E30300005891E /* ZZAdSDK.framework */,
+				3181C3031F14D68300008839 /* ZZAdSDK.framework */,
 				D57C99081F0E1ABC00046908 /* GoogleMobileAds.framework */,
 				D57C985C1F0DD59A00046908 /* MVSDKReward.framework */,
 				D57C985A1F0DD59300046908 /* MVSDKInterstitial.framework */,

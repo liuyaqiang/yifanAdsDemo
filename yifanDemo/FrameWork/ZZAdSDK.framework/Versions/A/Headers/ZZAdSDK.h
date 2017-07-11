@@ -23,10 +23,10 @@
 #import "ZZAdNativeMediaView.h"
 
 //! Project version number for ZZAdSDK.
-FOUNDATION_EXPORT int const ZZAdSDKVersionNumber;
+FOUNDATION_EXPORT int const ZZAdSDK_VersionNumber;
 
 //! Project version string for ZZAdSDK.
-FOUNDATION_EXPORT NSString* const ZZAdSDKVersionString;
+FOUNDATION_EXPORT NSString* const ZZAd_SDKVersionString;
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZZAdSDK/PublicHeader.h>
 
