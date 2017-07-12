@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3181326E1F15D18200B0640D /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */; };
 		3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3181C3031F14D68300008839 /* ZZAdSDK.framework */; };
 		318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
 		318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
-		31CE9BEF1F0F25B10068BEF9 /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
 		B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */; };
@@ -704,6 +704,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3181326E1F15D18200B0640D /* zzAdImage.bundle in Resources */,
 				B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */,
 				B980E0DB1E5D668900899615 /* LaunchScreen.storyboard in Resources */,
 				B980E0D81E5D668900899615 /* Assets.xcassets in Resources */,
@@ -711,7 +712,6 @@
 				B980E0D61E5D668900899615 /* Main.storyboard in Resources */,
 				B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */,
 				B9A126681ECD3E9A00A3F776 /* launch.jpg in Resources */,
-				31CE9BEF1F0F25B10068BEF9 /* zzAdImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
