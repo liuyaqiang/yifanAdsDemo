@@ -17,7 +17,7 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
-    NSString *showNextControl,*setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo, *refreshGeo;
+    NSString *showNextControl,*setting,*banner, *hideBanner, *interstitial, *adsInterstital,*selfInterstial, *native, *hideNative, *video, *icon, *hideIcon, *more, *offer, *gift, *followTask,*videoTask, *clearFollow, *clearInstallAppInfo, *refreshGeo, *sendEmail;
 }
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -251,6 +251,8 @@
     }else if ([text isEqualToString:refreshGeo]){
         [[PluginHelperOC getInstance]getNewReg];
         [self.view showHUDWithTitle:[PluginHelperOC getAreaCode]];
+    }else if ([text isEqualToString:sendEmail]){
+        [PluginHelperOC sendEmailWithToRecipients:@[@"233@qq.com"] ccRecipients:nil bccRecipients:nil subject:nil body:@"1212"];
     }
 }
 #pragma mark - response Event
@@ -277,8 +279,8 @@
 {
     if (!_dataArr) {
 
-        showNextControl = [NSString stringWithFormat:@"多界面test %d",self.index + 1], setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask", refreshGeo = @"refreshGeo";
-        _dataArr = @[@[showNextControl,setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask, refreshGeo]];
+        showNextControl = [NSString stringWithFormat:@"多界面test %d",self.index + 1], setting = @"setting" , banner = @"banner", hideBanner = @"hide banner", interstitial = @"interstitial",adsInterstital = @"adsInterstial",selfInterstial = @"selfInterstial",native = @"native", hideNative = @"hide native", video = @"video", icon = @"icon", hideIcon = @"hide icon", more = @"more", offer = @"offer", gift = @"gift", followTask = @"followTask", clearFollow = @"clearFollow", clearInstallAppInfo = @"clearInstallAppInfo",videoTask = @"videoTask", refreshGeo = @"refreshGeo", sendEmail = @"sendEmail";
+        _dataArr = @[@[showNextControl,setting ,banner, hideBanner, interstitial, adsInterstital,selfInterstial,native, hideNative, video, icon, hideIcon, more, offer, gift, followTask, clearFollow, clearInstallAppInfo,videoTask, refreshGeo,sendEmail]];
     }
     return _dataArr;
 }
