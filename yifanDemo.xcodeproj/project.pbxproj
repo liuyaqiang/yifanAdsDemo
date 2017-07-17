@@ -75,7 +75,6 @@
 		D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568997E1EE00F92003AC57C /* FBSDKCoreKit.framework */; };
 		D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899821EE00FA3003AC57C /* Bolts.framework */; };
 		D57C97781F0A21A100046908 /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97771F0A21A100046908 /* InMobiSDK.framework */; };
-		D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */; };
 		D57C97AF1F0B963300046908 /* IronSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97AD1F0B962200046908 /* IronSource.framework */; };
 		D57C97B11F0B986400046908 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C97B01F0B986400046908 /* libxml2.tbd */; };
 		D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C98541F0DD59100046908 /* MVSDK.framework */; };
@@ -245,8 +244,6 @@
 		D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		D56899821EE00FA3003AC57C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D57C97771F0A21A100046908 /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
-		D57C97791F0A228E00046908 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
-		D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		D57C97AD1F0B962200046908 /* IronSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IronSource.framework; sourceTree = "<group>"; };
 		D57C97B01F0B986400046908 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		D57C98541F0DD59100046908 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDK.framework; sourceTree = "<group>"; };
@@ -489,8 +486,6 @@
 				B980E1391E5E8C2E00899615 /* MBProgressHUD+EV.m */,
 				B980E13B1E5E8D3600899615 /* MBProgressHUD.h */,
 				B980E13C1E5E8D3600899615 /* MBProgressHUD.m */,
-				D57C97791F0A228E00046908 /* CustomIOSAlertView.h */,
-				D57C977A1F0A228E00046908 /* CustomIOSAlertView.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -747,7 +742,6 @@
 				B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */,
 				B980E3701E5EB66B00899615 /* MASCompositeConstraint.m in Sources */,
 				B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */,
-				D57C977B1F0A228E00046908 /* CustomIOSAlertView.m in Sources */,
 				B980E3741E5EB66B00899615 /* MASViewAttribute.m in Sources */,
 				B980E3721E5EB66B00899615 /* MASConstraintMaker.m in Sources */,
 				B980E3761E5EB66B00899615 /* NSArray+MASAdditions.m in Sources */,

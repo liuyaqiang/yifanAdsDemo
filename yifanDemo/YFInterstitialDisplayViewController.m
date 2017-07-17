@@ -11,12 +11,11 @@
 #import "MBProgressHUD+EV.h"
 #import "Masonry.h"
 #import "YFCommonHeader.h"
-#import "CustomIOSAlertView.h"
 
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
-    NSString *interstitial,*posIntAhead_noGap, *posIntAhead_gap;
+    NSString *interstitial,*posIntAhead_noGap, *posIntAfter_noGap, *posIntAhead_gap, *posIntAfter_gap;
 }
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArr;
@@ -126,55 +125,30 @@
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-        
-        CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc]init];
-        [alertView setContainerView:[[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 50)]];
-        [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"后出(不受gap控制)", nil]];
-        [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
-            [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
-                NSLog(@"interstitial show");
-            } completionHandler:^(BOOL completion) {
-            }];
+    }else if ([text isEqualToString:posIntAfter_noGap]){
+        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
+            NSLog(@"interstitial show");
+        } completionHandler:^(BOOL completion) {
+            NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-        [alertView show];
-    }else if ([text isEqualToString:posIntAhead_gap]){
+    }
+    else if ([text isEqualToString:posIntAhead_gap]){
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:YES withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-        
-        CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc]init];
-        [alertView setContainerView:[[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 50)]];
-        [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"后出(受gap控制)", nil]];
-        [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
-            [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:YES withPage:PAGE shownHandler:^{
-                NSLog(@"interstitial show");
-            } completionHandler:^(BOOL completion) {
-            }];
-        }];
-        [alertView show];
-    }
-    
-    
-}
-#pragma mark - UIAlertViewDelegate
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (alertView.tag == 0) {
-        [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
-            NSLog(@"interstitial show");
-        } completionHandler:^(BOOL completion) {
-            
-        }];
-    }else{
+    }else if ([text isEqualToString:posIntAfter_gap]){
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:YES withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
-            
+            NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
     }
+    
+    
 }
+
 #pragma mark - response Event
 - (void)hidden
 {
@@ -198,8 +172,8 @@
 - (NSArray *)dataArr
 {
     if (!_dataArr) {
-        interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)";
-        _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAhead_gap]];
+        interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAfter_noGap = @"后出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)", posIntAfter_gap = @"后出(受gap控制)";
+        _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAfter_noGap, posIntAhead_gap, posIntAfter_gap]];
     }
     return _dataArr;
 }
