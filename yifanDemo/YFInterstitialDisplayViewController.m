@@ -12,6 +12,10 @@
 #import "Masonry.h"
 #import "YFCommonHeader.h"
 
+#define BEFORE_SHOW_GAP @"前出(受gap控制)"
+#define AFTER_SHOW_GAP @"后出(受gap控制)"
+#define BEFORE_SHOW_NO_GAP @"前出(不受gap控制)"
+#define AFTER_SHOW_NO_GAP @"后出(不受gap控制)"
 
 @interface YFInterstitialDisplayViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -30,14 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    [IMSdk initWithAccountID:@"4028cb8b2c3a0b45012c406824e800ba"];
-    
-    //    [IMSdk setLogLevel:kIMSDKLogLevelDebug];
-    
-    //    self.interstitialaa = [[IMInterstitial alloc] initWithPlacementId:[@"1446377525790" integerValue]];
-    //    self. interstitialaa.delegate = self;
-    //    [self.interstitialaa load];
-    
     
     switch (self.displayType) {
         case YFAdsDisplayTypeDefault:
@@ -52,6 +48,8 @@
         default:
             break;
     }
+    
+    interstitial = @"正常出",posIntAhead_noGap = BEFORE_SHOW_NO_GAP, posIntAhead_gap = BEFORE_SHOW_GAP;
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -113,32 +111,38 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSArray *rowArr = self.dataArr[indexPath.section];
     NSString *text = rowArr[indexPath.row];
+    __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if([text isEqualToString:interstitial]){
         [PluginHelperOC showInterstialWithDisplayType:self.displayType withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL isCompletion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-    }else if ([text isEqualToString:posIntAhead_noGap]){
+    }
+    else if ([text isEqualToString:BEFORE_SHOW_NO_GAP]){
+        posIntAhead_noGap = cell.textLabel.text = AFTER_SHOW_NO_GAP;
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:NO withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-    }else if ([text isEqualToString:posIntAfter_noGap]){
+    }else if ([text isEqualToString:AFTER_SHOW_NO_GAP]){
+        posIntAhead_noGap = cell.textLabel.text = BEFORE_SHOW_NO_GAP;
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:NO withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
     }
-    else if ([text isEqualToString:posIntAhead_gap]){
+    else if ([text isEqualToString:BEFORE_SHOW_GAP]){
+        posIntAhead_gap = cell.textLabel.text = AFTER_SHOW_GAP;
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:1 withGapEnable:YES withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
             NSLog(@"%@ --- %@ isCompletion",self.title,text);
         }];
-    }else if ([text isEqualToString:posIntAfter_gap]){
+    }else if ([text isEqualToString:AFTER_SHOW_GAP]){
+        posIntAhead_gap = cell.textLabel.text = BEFORE_SHOW_GAP;
         [PluginHelperOC showInterstitialWithDisplayType:self.displayType withPos:2 withGapEnable:YES withPage:PAGE shownHandler:^{
             NSLog(@"interstitial show");
         } completionHandler:^(BOOL completion) {
@@ -171,10 +175,10 @@
 }
 - (NSArray *)dataArr
 {
-    if (!_dataArr) {
-        interstitial = @"正常出",posIntAhead_noGap = @"前出(不受gap控制)", posIntAfter_noGap = @"后出(不受gap控制)", posIntAhead_gap = @"前出(受gap控制)", posIntAfter_gap = @"后出(受gap控制)";
-        _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAfter_noGap, posIntAhead_gap, posIntAfter_gap]];
-    }
+    //if (!_dataArr) {
+    
+        _dataArr = @[@[ interstitial,posIntAhead_noGap, posIntAhead_gap]];
+    //}
     return _dataArr;
 }
 
