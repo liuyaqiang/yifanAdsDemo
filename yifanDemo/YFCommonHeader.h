@@ -13,6 +13,7 @@
 //#define YF_AppKey @"a6ivlpeytjduawrkyya4vxh9"
 #define YF_AppKey  @"a6ivlpey0w8znoplqsub6stw"
 //#define YF_AppKey  @"a6ivlpey60kwj8bvaunkgytk"
+//#define YF_AppKey  @"a6ivlpeyev628qx5lzttko3g"
 
 #define AppKey [[NSUserDefaults standardUserDefaults]stringForKey:@"default_appkey"].length ?[[NSUserDefaults standardUserDefaults]stringForKey:@"default_appkey"]  : YF_AppKey
 
