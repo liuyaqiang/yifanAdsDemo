@@ -80,6 +80,7 @@
     [PluginHelperOC setUmeng:@"umengkey123" withAnalyticsType:1];
     [PluginHelperOC setAdjustWithApptoken:@"adjusttoken123" withEnvironment:@"ADJEnvironmentSandbox"];
     [PluginHelperOC setFacebookTrack:@"facebookid"];
+//    [PluginHelperOC setUnityAdRewardKey:@"234"];
 
 }
 
