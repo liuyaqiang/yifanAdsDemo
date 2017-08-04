@@ -155,17 +155,17 @@
         ctl.displayType = YFAdsDisplayTypeSelf;
         [self.navigationController pushViewController:ctl animated:YES];
     }else if ([text isEqualToString:native]){
-        if ([PluginHelperOC hasNative]) {
-            [PluginHelperOC showNativeAdWithFrame:CGRectMake(0,0,500,500)];
+        if ([PluginHelperOC hasNative:PAGE]) {
+            [PluginHelperOC showNativeAdWithFrame:CGRectMake(0,0,500,500) withPage:PAGE];
         }else{
             [self.view showHUDWithTitle:@"no native"];
         }
     }else if ([text isEqualToString:hideNative]){
         [PluginHelperOC hideNative];
     }else if ([text isEqualToString:video]){
-        if ([PluginHelperOC hasVideo]) {
+        if ([PluginHelperOC hasVideo:PAGE]) {
             
-            [PluginHelperOC showVideo:^{
+            [PluginHelperOC showVideo:PAGE completion:^{
                 //NSLog(@"video show");
             } withCompletion:^(BOOL completrion) {
                 if (completrion) {
@@ -186,15 +186,15 @@
     }else if ([text isEqualToString:hideIcon]){
         [PluginHelperOC hideIcon];
     }else if ([text isEqualToString:more]){
-        if ([PluginHelperOC hasMore]) {
-            [PluginHelperOC showMore];
+        if ([PluginHelperOC hasMore:PAGE]) {
+            [PluginHelperOC showMore:PAGE];
         }else{
             [self.view showHUDWithTitle:@"no more"];
         }
     }else if ([text isEqualToString:offer]){
         __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        if ([PluginHelperOC hasOfferWithTaskType:0]) {
-            [PluginHelperOC showOfferWithTaskType:0 withTemplateType:0 completionHandler:^(NSString * str) {
+        if ([PluginHelperOC hasOffer:PAGE withTaskType:0]) {
+            [PluginHelperOC showOffer:PAGE withTaskType:0 withTemplateType:0 completionHandler:^(NSString * str) {
                 NSLog(@"offer completion......%@",str);
                 cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",([cell.detailTextLabel.text integerValue] + [str integerValue])];
             }];
@@ -227,9 +227,9 @@
     }else if ([text isEqualToString:clearInstallAppInfo]){
         [PluginHelperOC clearInstallAppInfo];
     }else if ([text isEqualToString:videoTask]){
-        NSString *vt = [PluginHelperOC hasVideoOrTask];
+        NSString *vt = [PluginHelperOC hasVideoOrTask:PAGE];
         if ([vt isEqualToString:@"video"]) {
-            [PluginHelperOC showVideo:^{
+            [PluginHelperOC showVideo:PAGE completion:^{
                 //NSLog(@"video show");
             } withCompletion:^(BOOL completrion) {
                 if (completrion) {
@@ -240,7 +240,7 @@
             }];
         } else if ([vt isEqualToString:@"task"]){
             __block UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-            [PluginHelperOC showTask:^(NSString * str) {
+            [PluginHelperOC showTask:PAGE completion:^(NSString * str) {
                 NSLog(@"offer completion......%@",str);
                 cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",([cell.detailTextLabel.text integerValue] + [str integerValue])];
             }];

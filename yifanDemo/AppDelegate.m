@@ -24,7 +24,7 @@
     [self configPlugin];
     
     [PluginHelperOC InitPluginWithAppKey:AppKey withPubId:pubId bannerLocation:Bottom isPortrait:YES isDebug:YES];
-    [PluginHelperOC showBanner];
+//    [PluginHelperOC showBanner];
 
 //    }];
     [PluginHelperOC setPostionOfLandscapeInPortraitMode:Bottom];
