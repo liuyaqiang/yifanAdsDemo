@@ -138,7 +138,7 @@
         [self presentViewController:setCtl animated:YES completion:nil];
     }else if ([text isEqualToString:banner]) {
         //[PluginHelperOC showBannerWithPostion:Bottom];
-        [PluginHelperOC showBanner];
+        [PluginHelperOC showBanner:PAGE];
 
     }else if ([text isEqualToString:hideBanner]){
         [PluginHelperOC hideBanner];
@@ -178,8 +178,8 @@
             [self.view showHUDWithTitle:@"no video"];
         }
     }else if ([text isEqualToString:icon]){
-        if ([PluginHelperOC hasIcon]) {
-            [PluginHelperOC showIcon];
+        if ([PluginHelperOC hasIcon:PAGE]) {
+            [PluginHelperOC showIcon:PAGE];
         }else{
             [self.view showHUDWithTitle:@"无Icon"];
         }
