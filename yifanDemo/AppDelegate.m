@@ -78,7 +78,7 @@
     //[PluginHelperOC setIcon:CGRectMake(100, 70, 96, 96)];
     //[PluginHelperOC setAutoRotate:YES];
     [PluginHelperOC setUmeng:@"umengkey123" withAnalyticsType:1];
-    [PluginHelperOC setAdjustWithApptoken:@"adjusttoken123" withEnvironment:@"ADJEnvironmentSandbox"];
+    [PluginHelperOC setAdjustWithApptoken:@"upm7wa6bhgcg" withEnvironment:@"ADJEnvironmentSandbox"];
     [PluginHelperOC setFacebookTrack:@"facebookid"];
 //    [PluginHelperOC setUnityAdRewardKey:@"234"];
 
