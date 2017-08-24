@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */ = {isa = PBXBuildFile; fileRef = 256975DF1F428BB60022DAF7 /* 553834731_adjust */; };
+		316853E31F4D27BB00BB4463 /* AdxmiMergeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */; };
 		3181326E1F15D18200B0640D /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */; };
 		3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3181C3031F14D68300008839 /* ZZAdSDK.framework */; };
 		318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56899801EE00F9D003AC57C /* FBAudienceNetwork.framework */; };
@@ -148,6 +149,7 @@
 
 /* Begin PBXFileReference section */
 		256975DF1F428BB60022DAF7 /* 553834731_adjust */ = {isa = PBXFileReference; lastKnownFileType = file; path = 553834731_adjust; sourceTree = "<group>"; };
+		316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdxmiMergeSDK.framework; sourceTree = "<group>"; };
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		3181C3031F14D68300008839 /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
 		31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = zzAdImage.bundle; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */,
 				D57C985D1F0DD59A00046908 /* MVSDKReward.framework in Frameworks */,
 				D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */,
+				316853E31F4D27BB00BB4463 /* AdxmiMergeSDK.framework in Frameworks */,
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
 				D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */,
 				D56898A21ED90C59003AC57C /* AdColony.framework in Frameworks */,
@@ -342,6 +345,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */,
 				3181C3031F14D68300008839 /* ZZAdSDK.framework */,
 				D5892AF11F13702D003CC098 /* VungleSDK.framework */,
 				31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */,
@@ -932,7 +936,7 @@
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobula.sample.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yifants.finedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -972,7 +976,7 @@
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobula.sample.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yifants.finedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
