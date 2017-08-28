@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */ = {isa = PBXBuildFile; fileRef = 256975DF1F428BB60022DAF7 /* 553834731_adjust */; };
+		314D50541F540B4A000E66F6 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 314D50521F540B4A000E66F6 /* TapjoyResources.bundle */; };
+		314D50551F540B4A000E66F6 /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314D50531F540B4A000E66F6 /* Tapjoy.framework */; };
 		316853E31F4D27BB00BB4463 /* AdxmiMergeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */; };
 		3181326E1F15D18200B0640D /* zzAdImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31CE9BEE1F0F25B10068BEF9 /* zzAdImage.bundle */; };
 		3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3181C3031F14D68300008839 /* ZZAdSDK.framework */; };
@@ -149,6 +151,8 @@
 
 /* Begin PBXFileReference section */
 		256975DF1F428BB60022DAF7 /* 553834731_adjust */ = {isa = PBXFileReference; lastKnownFileType = file; path = 553834731_adjust; sourceTree = "<group>"; };
+		314D50521F540B4A000E66F6 /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
+		314D50531F540B4A000E66F6 /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tapjoy.framework; sourceTree = "<group>"; };
 		316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdxmiMergeSDK.framework; sourceTree = "<group>"; };
 		316F10481EB32AAA00C04510 /* PluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginSDK.xcodeproj; path = "../GAME7-IOS-SDK/PluginSDK.xcodeproj"; sourceTree = "<group>"; };
 		3181C3031F14D68300008839 /* ZZAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZAdSDK.framework; sourceTree = "<group>"; };
@@ -299,6 +303,7 @@
 				B980E1291E5D87FA00899615 /* libc++abi.tbd in Frameworks */,
 				D56898AF1ED90C60003AC57C /* libAppnextNativeAdsSDK.a in Frameworks */,
 				B980E1211E5D87C400899615 /* iAd.framework in Frameworks */,
+				314D50551F540B4A000E66F6 /* Tapjoy.framework in Frameworks */,
 				D56898AE1ED90C60003AC57C /* libAppnextLib.a in Frameworks */,
 				B980E11A1E5D86BC00899615 /* MessageUI.framework in Frameworks */,
 				D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */,
@@ -333,6 +338,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		314D50501F540B4A000E66F6 /* Tapjoy.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				314D50511F540B4A000E66F6 /* Resources */,
+				314D50531F540B4A000E66F6 /* Tapjoy.framework */,
+			);
+			path = Tapjoy.embeddedframework;
+			sourceTree = "<group>";
+		};
+		314D50511F540B4A000E66F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				314D50521F540B4A000E66F6 /* TapjoyResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		316F10491EB32AAA00C04510 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +367,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				314D50501F540B4A000E66F6 /* Tapjoy.embeddedframework */,
 				316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */,
 				3181C3031F14D68300008839 /* ZZAdSDK.framework */,
 				D5892AF11F13702D003CC098 /* VungleSDK.framework */,
@@ -707,6 +730,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314D50541F540B4A000E66F6 /* TapjoyResources.bundle in Resources */,
 				3181326E1F15D18200B0640D /* zzAdImage.bundle in Resources */,
 				B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */,
 				B980E0DB1E5D668900899615 /* LaunchScreen.storyboard in Resources */,
@@ -936,6 +960,7 @@
 					"$(PROJECT_DIR)/yifanDemo/FrameWork",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/UnityAds.embeddedframework",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/VungleSDK.embeddedframework",
+					"$(PROJECT_DIR)/yifanDemo/FrameWork/Tapjoy.embeddedframework",
 				);
 				INFOPLIST_FILE = yifanDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -977,6 +1002,7 @@
 					"$(PROJECT_DIR)/yifanDemo/FrameWork",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/UnityAds.embeddedframework",
 					"$(PROJECT_DIR)/yifanDemo/FrameWork/VungleSDK.embeddedframework",
+					"$(PROJECT_DIR)/yifanDemo/FrameWork/Tapjoy.embeddedframework",
 				);
 				INFOPLIST_FILE = yifanDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
