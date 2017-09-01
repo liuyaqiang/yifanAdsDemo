@@ -17,7 +17,6 @@
 		318E34F61EE564ED0027EBD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980E10D1E5D864700899615 /* AVFoundation.framework */; };
 		B92AD3771EA6229B00EE553A /* YFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AD3751EA6229B00EE553A /* YFSettingViewController.m */; };
 		B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */; };
-		B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */; };
 		B93A4BA91E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93A4BA81E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m */; };
 		B93C3D621E84B3A700C1D0A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93C3D611E84B3A700C1D0A5 /* QuartzCore.framework */; };
 		B93C3D641E84B3B000C1D0A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93C3D631E84B3B000C1D0A5 /* Security.framework */; };
@@ -63,6 +62,7 @@
 		B980E3771E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E3691E5EB66B00899615 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B980E3781E5EB66B00899615 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36B1E5EB66B00899615 /* View+MASAdditions.m */; };
 		B980E3791E5EB66B00899615 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */; };
+		B98DE46E1F59054800B0CB70 /* PluginSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B98DE46D1F59054800B0CB70 /* PluginSDKResources.bundle */; };
 		B9A126681ECD3E9A00A3F776 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9A126671ECD3E9A00A3F776 /* launch.jpg */; };
 		B9F73FE51F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */; };
 		D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898941ED90C4E003AC57C /* UMMobClick.framework */; };
@@ -161,7 +161,6 @@
 		B92AD3751EA6229B00EE553A /* YFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSettingViewController.m; sourceTree = "<group>"; };
 		B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFSettingViewController.xib; sourceTree = "<group>"; };
 		B92AD3C91EA7032400EE553A /* YFCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFCommonHeader.h; sourceTree = "<group>"; };
-		B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PluginSDKResources.bundle; sourceTree = "<group>"; };
 		B93A4BA71E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFInterstitialDisplayViewController.h; sourceTree = "<group>"; };
 		B93A4BA81E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFInterstitialDisplayViewController.m; sourceTree = "<group>"; };
 		B93C3D611E84B3A700C1D0A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -236,6 +235,7 @@
 		B980E36C1E5EB66B00899615 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		B980E36D1E5EB66B00899615 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B980E36E1E5EB66B00899615 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B98DE46D1F59054800B0CB70 /* PluginSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PluginSDKResources.bundle; sourceTree = "<group>"; };
 		B9A126671ECD3E9A00A3F776 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 		B9F73FE31F010A0E002DF2F7 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		B9F73FE41F010A0E002DF2F7 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
@@ -392,7 +392,6 @@
 				D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */,
 				D56898941ED90C4E003AC57C /* UMMobClick.framework */,
 				D56898951ED90C4E003AC57C /* UnityAds.framework */,
-				B92AD3FC1EA70F4900EE553A /* PluginSDKResources.bundle */,
 			);
 			path = FrameWork;
 			sourceTree = "<group>";
@@ -434,6 +433,7 @@
 				B92AD3761EA6229B00EE553A /* YFSettingViewController.xib */,
 				B93A4BA71E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.h */,
 				B93A4BA81E9B2F6D0017E2BA /* YFInterstitialDisplayViewController.m */,
+				B98DE46D1F59054800B0CB70 /* PluginSDKResources.bundle */,
 				B92AD3D51EA70F4900EE553A /* FrameWork */,
 				B980E3F91E5ECDC200899615 /* Helpers */,
 				B980E3541E5EB66B00899615 /* Masonry */,
@@ -735,9 +735,9 @@
 				B92AD3781EA6229B00EE553A /* YFSettingViewController.xib in Resources */,
 				B980E0DB1E5D668900899615 /* LaunchScreen.storyboard in Resources */,
 				B980E0D81E5D668900899615 /* Assets.xcassets in Resources */,
+				B98DE46E1F59054800B0CB70 /* PluginSDKResources.bundle in Resources */,
 				B980E36F1E5EB66B00899615 /* Info.plist in Resources */,
 				B980E0D61E5D668900899615 /* Main.storyboard in Resources */,
-				B92AD4141EA70F4900EE553A /* PluginSDKResources.bundle in Resources */,
 				256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */,
 				B9A126681ECD3E9A00A3F776 /* launch.jpg in Resources */,
 			);
