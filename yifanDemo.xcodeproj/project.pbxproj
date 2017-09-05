@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */ = {isa = PBXBuildFile; fileRef = 256975DF1F428BB60022DAF7 /* 553834731_adjust */; };
+		25F55DDF1F5E9C150097CE62 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */; };
 		314D50541F540B4A000E66F6 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 314D50521F540B4A000E66F6 /* TapjoyResources.bundle */; };
 		314D50551F540B4A000E66F6 /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314D50531F540B4A000E66F6 /* Tapjoy.framework */; };
 		316853E31F4D27BB00BB4463 /* AdxmiMergeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */; };
@@ -151,6 +152,7 @@
 
 /* Begin PBXFileReference section */
 		256975DF1F428BB60022DAF7 /* 553834731_adjust */ = {isa = PBXFileReference; lastKnownFileType = file; path = 553834731_adjust; sourceTree = "<group>"; };
+		25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGCDWebServer.a; sourceTree = "<group>"; };
 		314D50521F540B4A000E66F6 /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		314D50531F540B4A000E66F6 /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tapjoy.framework; sourceTree = "<group>"; };
 		316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdxmiMergeSDK.framework; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
 				D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */,
 				D56898A21ED90C59003AC57C /* AdColony.framework in Frameworks */,
+				25F55DDF1F5E9C150097CE62 /* libGCDWebServer.a in Frameworks */,
 				B980E1101E5D865600899615 /* CoreMotion.framework in Frameworks */,
 				D56898B01ED90C60003AC57C /* libAppnextSDKCore.a in Frameworks */,
 				B980E10A1E5D862D00899615 /* MediaPlayer.framework in Frameworks */,
@@ -367,6 +370,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */,
 				314D50501F540B4A000E66F6 /* Tapjoy.embeddedframework */,
 				316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */,
 				3181C3031F14D68300008839 /* ZZAdSDK.framework */,
