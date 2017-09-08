@@ -33,6 +33,7 @@
 
 #import <Foundation/Foundation.h>
 #import "HZShowOptions.h"
+#import "HZShowOptions.h"
 
 @class HZShowOptions;
 

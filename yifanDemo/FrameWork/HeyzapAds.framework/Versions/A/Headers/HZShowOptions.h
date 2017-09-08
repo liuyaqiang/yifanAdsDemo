@@ -33,6 +33,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "HeyzapAds.h"
 
 /** HZShowOptions allows you to pass options to configure how ads are shown */
 @interface HZShowOptions : NSObject

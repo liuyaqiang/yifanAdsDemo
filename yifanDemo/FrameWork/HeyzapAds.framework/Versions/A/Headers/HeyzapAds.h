@@ -47,10 +47,6 @@
 #import "HZMediatedNativeAdManager.h"
 #import "HZMediatedNativeAdViewRegisterer.h"
 
-#import "HZOfferWallAd.h"
-#import "HZOfferWallShowOptions.h"
-#import "HZFyberVirtualCurrencyClient.h"
-
 #import "HZFetchOptions.h"
 #import "HZShowOptions.h"
 #import "HZBannerAd.h"
@@ -61,7 +57,7 @@
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-#define SDK_VERSION @"9.12.7"
+#define SDK_VERSION @"9.10.2"
 
 #if __has_feature(objc_modules)
 @import AdSupport;
@@ -129,15 +125,13 @@ extern NSString * const HZNetworkHyprMX;
 extern NSString * const HZNetworkHeyzapExchange;
 extern NSString * const HZNetworkLeadbolt;
 extern NSString * const HZNetworkInMobi;
-extern NSString * const HZNetworkDomob;
-extern NSString * const HZNetworkFyber;
 
 // General Network Callbacks
 extern NSString * const HZNetworkCallbackInitialized;
 extern NSString * const HZNetworkCallbackShow;
 extern NSString * const HZNetworkCallbackAvailable;
+extern NSString * const HZNetworkCallbackHide;
 extern NSString * const HZNetworkCallbackFetchFailed;
-extern NSString * const HZNetworkCallbackShowFailed;
 extern NSString * const HZNetworkCallbackClick;
 extern NSString * const HZNetworkCallbackDismiss;
 extern NSString * const HZNetworkCallbackIncentivizedResultIncomplete;
@@ -181,11 +175,6 @@ extern NSString * const HZMediationDidFinishAdAudioNotification;
 extern NSString * const HZMediationDidCompleteIncentivizedAdNotification;
 extern NSString * const HZMediationDidFailToCompleteIncentivizedAdNotification;
 
-// OfferWall NSNotifications
-extern NSString * const HZFyberDidReceiveVirtualCurrencyResponseNotification;
-extern NSString * const HZFyberDidFailToReceiveVirtualCurrencyResponseNotification;
-
-
 // User Info Keys for the HZMediationNetworkCallbackNotification
 /**
  *  The corresponding value is the name of the network callback being sent (see above constants for the possible values).
@@ -201,10 +190,6 @@ extern NSString * const HZAdTagUserInfoKey;
  *  The corresponding value is the name of the network providing the ad a NSNotification is being sent about, if applicable.
  */
 extern NSString * const HZNetworkNameUserInfoKey;
-/**
- *  The corresponding value is the HZFyberVirtualCurrencyResponse object the NSNotification is being sent about, if applicable.
- */
-extern NSString * const HZFyberVirtualCurrencyResponseUserInfoKey;
 
 
 /** The `HZAdsDelegate` protocol provides global information about our ads. If you want to know if we had an ad to show after calling `showAd` (for example, to fallback to another ads provider). It is recommend using the `showAd:completion:` method instead. */
@@ -242,6 +227,12 @@ extern NSString * const HZFyberVirtualCurrencyResponseUserInfoKey;
  *  @param tag The identifier for the ad.
  */
 - (void)didFailToReceiveAdWithTag: (NSString *) tag;
+
+
+
+// Should probably have new API: didFailToReceiveAd (no tag)
+// didRecieveAd (no tag)
+
 
 /**
  *  Called when the user clicks on an ad.
