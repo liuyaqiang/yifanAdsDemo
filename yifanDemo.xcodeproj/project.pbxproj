@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2534848F1F8C5BF500C5120E /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2534848E1F8C5BF500C5120E /* AdjustSdk.framework */; };
 		256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */ = {isa = PBXBuildFile; fileRef = 256975DF1F428BB60022DAF7 /* 553834731_adjust */; };
 		25F55DDF1F5E9C150097CE62 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */; };
 		314D50541F540B4A000E66F6 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 314D50521F540B4A000E66F6 /* TapjoyResources.bundle */; };
@@ -69,7 +70,6 @@
 		D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898941ED90C4E003AC57C /* UMMobClick.framework */; };
 		D56898991ED90C4E003AC57C /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898951ED90C4E003AC57C /* UnityAds.framework */; };
 		D56898A21ED90C59003AC57C /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989B1ED90C59003AC57C /* AdColony.framework */; };
-		D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989C1ED90C59003AC57C /* AdjustSdk.framework */; };
 		D56898A41ED90C59003AC57C /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989D1ED90C59003AC57C /* AppLovinSDK.framework */; };
 		D56898A51ED90C59003AC57C /* AvocarrotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */; };
 		D56898AE1ED90C60003AC57C /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D56898AA1ED90C60003AC57C /* libAppnextLib.a */; };
@@ -151,6 +151,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2534848E1F8C5BF500C5120E /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
 		256975DF1F428BB60022DAF7 /* 553834731_adjust */ = {isa = PBXFileReference; lastKnownFileType = file; path = 553834731_adjust; sourceTree = "<group>"; };
 		25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGCDWebServer.a; sourceTree = "<group>"; };
 		314D50521F540B4A000E66F6 /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
@@ -244,7 +245,6 @@
 		D56898941ED90C4E003AC57C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		D56898951ED90C4E003AC57C /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		D568989B1ED90C59003AC57C /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
-		D568989C1ED90C59003AC57C /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdjustSdk.framework; sourceTree = "<group>"; };
 		D568989D1ED90C59003AC57C /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
 		D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AvocarrotSDK.framework; sourceTree = "<group>"; };
 		D56898AA1ED90C60003AC57C /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
@@ -289,6 +289,7 @@
 				B980E1181E5D86B400899615 /* CoreGraphics.framework in Frameworks */,
 				B93C3D681E84B3F600C1D0A5 /* MobileCoreServices.framework in Frameworks */,
 				B980E1161E5D868700899615 /* SystemConfiguration.framework in Frameworks */,
+				2534848F1F8C5BF500C5120E /* AdjustSdk.framework in Frameworks */,
 				318E34F51EE563DB0027EBD5 /* FBAudienceNetwork.framework in Frameworks */,
 				B93C3D661E84B3B600C1D0A5 /* CFNetwork.framework in Frameworks */,
 				D56899831EE00FA3003AC57C /* Bolts.framework in Frameworks */,
@@ -311,7 +312,6 @@
 				D568997F1EE00F92003AC57C /* FBSDKCoreKit.framework in Frameworks */,
 				B980E1141E5D867900899615 /* AudioToolbox.framework in Frameworks */,
 				D57C985D1F0DD59A00046908 /* MVSDKReward.framework in Frameworks */,
-				D56898A31ED90C59003AC57C /* AdjustSdk.framework in Frameworks */,
 				316853E31F4D27BB00BB4463 /* AdxmiMergeSDK.framework in Frameworks */,
 				B980E1121E5D866400899615 /* GLKit.framework in Frameworks */,
 				D56898981ED90C4E003AC57C /* UMMobClick.framework in Frameworks */,
@@ -370,6 +370,7 @@
 		B92AD3D51EA70F4900EE553A /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				2534848E1F8C5BF500C5120E /* AdjustSdk.framework */,
 				25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */,
 				314D50501F540B4A000E66F6 /* Tapjoy.embeddedframework */,
 				316853E21F4D27BB00BB4463 /* AdxmiMergeSDK.framework */,
@@ -391,7 +392,6 @@
 				D56898AB1ED90C60003AC57C /* libAppnextNativeAdsSDK.a */,
 				D56898AC1ED90C60003AC57C /* libAppnextSDKCore.a */,
 				D568989B1ED90C59003AC57C /* AdColony.framework */,
-				D568989C1ED90C59003AC57C /* AdjustSdk.framework */,
 				D568989D1ED90C59003AC57C /* AppLovinSDK.framework */,
 				D568989E1ED90C59003AC57C /* AvocarrotSDK.framework */,
 				D56898941ED90C4E003AC57C /* UMMobClick.framework */,
