@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2534849E1F8CB26A00C5120E /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2534849D1F8CB26A00C5120E /* AdjustSdk.framework */; };
 		253484A01F8CB28500C5120E /* AdjustPurchaseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2534849F1F8CB28500C5120E /* AdjustPurchaseSdk.framework */; };
+		253484AB1F8DC8EB00C5120E /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2534849D1F8CB26A00C5120E /* AdjustSdk.framework */; };
+		253484AC1F8DC8EB00C5120E /* AdjustSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2534849D1F8CB26A00C5120E /* AdjustSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		256975E01F428BB60022DAF7 /* 553834731_adjust in Resources */ = {isa = PBXBuildFile; fileRef = 256975DF1F428BB60022DAF7 /* 553834731_adjust */; };
 		25F55DDF1F5E9C150097CE62 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F55DDE1F5E9C150097CE62 /* libGCDWebServer.a */; };
 		314D50541F540B4A000E66F6 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 314D50521F540B4A000E66F6 /* TapjoyResources.bundle */; };
@@ -144,6 +146,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				253484AC1F8DC8EB00C5120E /* AdjustSdk.framework in Embed Frameworks */,
 				D56898B21ED90C72003AC57C /* AvocarrotSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -284,6 +287,7 @@
 				3181C3041F14D68300008839 /* ZZAdSDK.framework in Frameworks */,
 				B980E1271E5D87EC00899615 /* AdSupport.framework in Frameworks */,
 				D56898A51ED90C59003AC57C /* AvocarrotSDK.framework in Frameworks */,
+				253484AB1F8DC8EB00C5120E /* AdjustSdk.framework in Frameworks */,
 				D57C98551F0DD59100046908 /* MVSDK.framework in Frameworks */,
 				B980E10C1E5D863600899615 /* CoreMedia.framework in Frameworks */,
 				D57C985B1F0DD59300046908 /* MVSDKInterstitial.framework in Frameworks */,
